@@ -130,3 +130,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'jwt_auth.User'
+# ^ adds an authentification route -> our own custom model, rather than django default
+# ^ 1st folder path (jwt_auth); 2nd model name (User)
+
+REST_FRAMEWORK = {
+  'DEFAULT_RENDERER_CLASSES': [
+    'rest_framework.renderers.JSONRenderer',
+    'rest_framework.renderers.BrowsableAPIRenderer'
+  ],
+  'DEFAULT_AUTHENTICATION_CLASSES': [
+    'jwt_auth.authentication.JWTAuthentication'
+  ]
+}

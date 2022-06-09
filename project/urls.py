@@ -14,8 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include 
+# ^ include() allows us to redirect any endpoint through another file
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('boards/', include('boards.urls')),
+    path('terrain/', include('terrain.urls')),
+    path('preloved/', include('pre_loved.urls')),
+    path('auth/', include('jwt_auth.urls'))
 ]
