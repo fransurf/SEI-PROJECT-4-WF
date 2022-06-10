@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.exceptions import NotFound, ValidationError, PermissionDenied
 
+from pre_loved.serializers.populated import PopulatedPre_LovedSerializer
+
 from .models import Pre_loved
 from .serializers.common import Pre_LovedSerializer
 
@@ -20,8 +22,7 @@ class PrelovedListView(APIView):
     print('serialised preloveds', serialized_preloved.data)
     return Response(serialized_preloved.data, status.HTTP_200_OK)
 
-# Getting error on this view when posting through insomnia - invalid data
-# I think possibly because my owner field isn't created
+# ? Owner is not updating - always inputs as 1 (default)
   def post(self, request):
     deserialized_preloved = Pre_LovedSerializer(data=request.data)
     print('preloved post data ->', request.data)
@@ -33,3 +34,32 @@ class PrelovedListView(APIView):
       print(e)
       print(type(e))
       return Response({ 'detail': str(e) }, status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class PrelovedDetailView(APIView):
+
+  def get_preloved(self, pk):
+    try:
+      print(Pre_loved)
+      return Pre_loved.objects.get(pk=pk)
+    except Pre_loved.DoesNotExist as e:
+      print(e)
+      raise NotFound({ "detail": str(e) })
+
+  def get(self, _request, pk):
+    preloved = self.get_preloved(pk)
+    print('preloved ->', preloved)
+    serialised_preloved = PopulatedPre_LovedSerializer(preloved)
+    return Response(serialised_preloved.data, status.HTTP_200_OK)
+
+
+
+  # def delete(self, _request, pk):
+  #   try: 
+  #     preloved_to_delete = Pre_loved.objects.get(pk=pk)
+  #     print(preloved_to_delete.data)
+  #     preloved_to_delete.delete()
+  #     return Response(status=status.HTTP_204_NO_CONTENT)
+  #   except Pre_loved.DoesNotExist as e:
+  #     print(e)
+  #     raise NotFound({ "detail": str(e) })
+
