@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+
+.boards-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: black;
+}
+
+.boards-page-container h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.boards-page-container .board .card {
+  height: 350px;
+  width: 600px;
+  margin: 20px;
+  overflow: hidden;
+  border: 1px solid magenta;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.boards-page-container .board .card .board-img {
+  min-width: 40% !important;
+  border: 2px solid blue;
+}
+
+.boards-page-container .board .card .card-body {
+  padding: 10px;
+}
+
+.boards-page-container .board .card .card-body .card-title {
+  font-size: 30px;
+  font-family: 'Permanent Marker', cursive;
+}
+/*# sourceMappingURL=main.css.map */
