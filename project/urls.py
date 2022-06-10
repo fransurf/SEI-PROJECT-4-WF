@@ -19,8 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('boards/', include('boards.urls')),
-    path('terrain/', include('terrain.urls')),
-    path('preloved/', include('pre_loved.urls')),
-    path('auth/', include('jwt_auth.urls'))
+    path('api/boards/', include('boards.urls')),
+    path('api/terrain/', include('terrain.urls')),
+    path('api/preloved/', include('pre_loved.urls')),
+    path('api/auth/', include('jwt_auth.urls'))
 ]
