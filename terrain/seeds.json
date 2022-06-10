@@ -1,0 +1,23 @@
+[
+{
+  "model": "terrain.terrain",
+  "pk": 1,
+  "fields": {
+    "type": "All"
+  }
+},
+{
+  "model": "terrain.terrain",
+  "pk": 2,
+  "fields": {
+    "type": "All mountain"
+  }
+},
+{
+  "model": "terrain.terrain",
+  "pk": 3,
+  "fields": {
+    "type": "Powder"
+  }
+}
+]

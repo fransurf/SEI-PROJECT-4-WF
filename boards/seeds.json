@@ -1,0 +1,66 @@
+[
+{
+  "model": "boards.board",
+  "pk": 1,
+  "fields": {
+    "make": "Nidecka",
+    "model": "Venus",
+    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "price": 350,
+    "link": "https://www.nidecker.com/en/snowboards/20-1161-venus.html#/186-size-139n",
+    "description": "Best Women’s All-Mountain Snowboard",
+    "tech": "Details",
+    "terrain": [
+      1
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 2,
+  "fields": {
+    "make": "K2",
+    "model": "Special Effect",
+    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "price": 520,
+    "link": "https://k2snow.com/en-gb/p/special-effects-snowboard",
+    "description": "Welcoming to the stage for their first ever appearance, K2 brings you the Special Effects snowboard. Built for boarders to want to adventure into the unknown and untouched snow, this board lets glide over snow, bounce down pillows and makes predictable turn imitations.",
+    "tech": "Details",
+    "terrain": [
+      2
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 3,
+  "fields": {
+    "make": "Rome",
+    "model": "Muse",
+    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "price": 400,
+    "link": "https://romesnowboards.com/products/rome-muse-snowboard-2021-2022?_pos=1&_sid=96eb8e1a3&_ss=r&variant=39536593698947?utm_source=media&utm_medium=whitelines&utm_campaign=buyers_guide",
+    "description": "This fresh model from Rome is essentially a bit like a speedboat. It’s fast, agile, exciting, bags of fun, and guaranteed to make onlookers green with envy. In fact, one could argue that it’s even better; with the Rome Muse, you won’t feel like a prime, Insta-influencer-grade bellend when you’re on",
+    "tech": "details",
+    "terrain": [
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 5,
+  "fields": {
+    "make": "Salomon",
+    "model": "Bellevue",
+    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "price": 430,
+    "link": "https://www.salomon.com/en-gb/shop-emea/product/bellevue-lg8287.html#color=60699",
+    "description": "It’s a midweek morning, you’re off work and you’ve woken up to reports of 40+inches of fresh powder overnight. In your mind’s eye you're chucking the biggest, longest turns spraying snow as far as humanly possible on the steepest deepest faces at full speed. You’re probably going to want a board that makes that feel easy too aren’t you?",
+    "tech": "details",
+    "terrain": [
+      1
+    ]
+  }
+}
+]
