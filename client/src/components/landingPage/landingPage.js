@@ -14,7 +14,7 @@ const LandingPage = () => {
         </div>
         {/* <img className='arrow-down' src='../../assets/general/arrow-greenDown.png' alt='down arrow'/> */}
       </div>
-      <img className='landing-img' src='../../assets/general/bwPhoto.jpeg' alt='female boarder sketch' />
+      <img className='landing-img' src='../../assets/general/bwPhoto.jpeg' alt='female boarder photo' />
     </Container>
 
   )

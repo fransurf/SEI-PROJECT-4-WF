@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import NavBar from './components/common/navBar'
 import LandingPage from './components/landingPage/landingPage'
+import LandingPageSelection from './components/landingPage/landingPageSelection'
 import BoardsCarousel from './components/boards/boardsCarousel'
 
 
@@ -40,9 +41,22 @@ const App = () => {
         <Routes>
           {/* Landing Page */}
           <Route path="/" element={<LandingPage />} />
+          <Route path="/selection" element={<LandingPageSelection />} />
+          {/* Landing page - board selection */}
 
-          {/* Boards pages */}
+          {/* BOARDS PAGES */}
           <Route path="/boards" element={<BoardsCarousel />} />
+          {/* Terrain pages */}
+
+          {/* Advice page - super easy - expanding divs */}
+
+          {/* AUTHENTICATION PAGES */}
+          {/* Register */}
+          {/* Login */}
+
+          {/* PRELOVED BOARDS PAGES */}
+          {/* FORM - preloved boards */}
+          {/* FORM - preloved index */}
 
         </Routes>
       </BrowserRouter>
