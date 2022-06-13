@@ -1,0 +1,73 @@
+
+
+.board-selector {
+  width: 50vw;
+  height: 15vh;
+  position: absolute;
+
+  .selector-text {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    transition: background-color .3s linear;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 7px 30px;
+  }
+  .selector-text:hover {
+    background-color: rgba(255, 0, 255, 0.7);      
+ }
+}
+
+#piste {
+  background-image: url(../../../../public/assets/landing/piste-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 65vh;
+  z-index: 5;
+}
+#park {
+  background-image: url(../../../../public/assets/landing/park-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 52vh;
+  z-index: 6;
+}
+#powder {
+  background-image: url(../../../../public/assets/landing/powder-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 39vh;
+  z-index: 7;
+}
+#all-mountain {
+  background-image: url(../../../../public/assets/landing/all-mountain-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 26vh;
+  z-index: 8;
+}
+#beginner {
+  background-image: url(../../../../public/assets/landing/beginner-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 13vh;
+  z-index: 9;
+}
+#all {
+  background-image: url(../../../../public/assets/landing/all-one.png);
+  filter: $drop;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  z-index: 10;
+}

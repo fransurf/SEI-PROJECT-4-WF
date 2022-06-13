@@ -1,0 +1,54 @@
+.board-selector {
+  z-index: 10;
+  width: 50vw;
+  height: 150px;
+}
+
+#piste {
+  background-image: url(../../../../public/assets/landing/piste-one.png);
+  -webkit-filter: drop-shadow(0 0 15px magenta);
+          filter: drop-shadow(0 0 15px magenta);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#park {
+  background-image: url(../../../../public/assets/landing/park-one.png);
+  -webkit-filter: drop-shadow(0 0 5px lightgreen);
+          filter: drop-shadow(0 0 5px lightgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#powder {
+  background-image: url(../../../../public/assets/landing/powder-one.png);
+  -webkit-filter: drop-shadow(0 0 5px lightgreen);
+          filter: drop-shadow(0 0 5px lightgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#all-mountain {
+  background-image: url(../../../../public/assets/landing/all-mountain-one.png);
+  -webkit-filter: drop-shadow(0 0 5px lightgreen);
+          filter: drop-shadow(0 0 5px lightgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#beginner {
+  background-image: url(../../../../public/assets/landing/beginner-one.png);
+  -webkit-filter: drop-shadow(0 0 5px lightgreen);
+          filter: drop-shadow(0 0 5px lightgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#all {
+  background-image: url(../../../../public/assets/landing/all-one.png);
+  -webkit-filter: drop-shadow(0 0 5px lightgreen);
+          filter: drop-shadow(0 0 5px lightgreen);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=landingPageSelection.css.map */

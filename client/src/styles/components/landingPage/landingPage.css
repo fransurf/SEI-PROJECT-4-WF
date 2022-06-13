@@ -28,6 +28,9 @@
   top: 0;
   right: 0;
   height: 100vh;
+  max-width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .landing-page-container .landing-text {
