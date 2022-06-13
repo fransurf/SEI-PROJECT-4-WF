@@ -16,9 +16,9 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 class BoardListView(APIView):
   permission_classes = (IsAuthenticatedOrReadOnly, ) # one-tuple, requires trailing comma
 
-  # ENDOPINTS & METHODS:
-  # GET (all) /albums/
-  # ? CONSIDER POST (one) /albums/ -> ADMIN ONLY!! USERS CANNOT POST BOARDS
+  # ENDPOINTS & METHODS:
+  # GET (all) /boards/
+  # ? CONSIDER POST (one) /boards/ -> ADMIN ONLY!! USERS CANNOT POST BOARDS
 
   # * GET all boards
   def get(self, _request):

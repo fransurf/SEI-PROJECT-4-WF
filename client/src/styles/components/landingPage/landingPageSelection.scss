@@ -8,14 +8,16 @@
   .selector-text {
     text-align: center;
     font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.8);
+    // color: black;
+    // background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 4px;
     transition: background-color .3s linear;
     width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -90%);
     padding: 7px 30px;
   }
   .selector-text:hover {
@@ -24,15 +26,18 @@
 }
 
 #piste {
-  background-image: url(../../../../public/assets/landing/piste-one.png);
+  background-image: url(../../../../public/assets/landing/piste.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;
   bottom: 65vh;
   z-index: 5;
 }
+#piste-text{
+  content: "Piste bashers"
+}
 #park {
-  background-image: url(../../../../public/assets/landing/park-one.png);
+  background-image: url(../../../../public/assets/landing/park.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +45,7 @@
   z-index: 6;
 }
 #powder {
-  background-image: url(../../../../public/assets/landing/powder-one.png);
+  background-image: url(../../../../public/assets/landing/powder.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,7 +53,7 @@
   z-index: 7;
 }
 #all-mountain {
-  background-image: url(../../../../public/assets/landing/all-mountain-one.png);
+  background-image: url(../../../../public/assets/landing/all-mountain.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,7 +61,7 @@
   z-index: 8;
 }
 #beginner {
-  background-image: url(../../../../public/assets/landing/beginner-one.png);
+  background-image: url(../../../../public/assets/landing/beginner.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,7 +69,7 @@
   z-index: 9;
 }
 #all {
-  background-image: url(../../../../public/assets/landing/all-one.png);
+  background-image: url(../../../../public/assets/landing/all.png);
   filter: $drop;
   background-size: cover;
   background-repeat: no-repeat;

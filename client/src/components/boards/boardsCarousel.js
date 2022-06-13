@@ -31,8 +31,7 @@ const BoardsCarousel = () => {
 
   return (
     <Container className='boards-page-container'>
-      <h1 className='glitch' data-text="Welcome to Women that Shred">🏆 Welcome to Women that Shred 🏆</h1>
-      <h1 className='glow'>🏆 Welcome to Women that Shred 🏆</h1>
+      <h1 className='glitch' data-text="Welcome to Women that Shred">THIS WILL BE THE BOARDS CAROUSEL</h1>
       <div className='scanlines'></div>
       <Row className='justify-contents-center'>
         {boards.map(board => {

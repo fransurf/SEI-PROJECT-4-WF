@@ -9,29 +9,30 @@ import NavBar from './components/common/navBar'
 import LandingPage from './components/landingPage/landingPage'
 import LandingPageSelection from './components/landingPage/landingPageSelection'
 import BoardsCarousel from './components/boards/boardsCarousel'
+import BoardsTerrain from './components/boards/boardsTerrain'
 
 
 const App = () => {
 
-  const [boards, setBoards] = useState([])
-  const [errors, setErrors] = useState(false)
+  // const [boards, setBoards] = useState([])
+  // const [errors, setErrors] = useState(false)
 
-  useEffect(() => {
-    const getBoards = async () => {
-      try {
-        const { data } = await axios.get('/api/boards/') 
-        console.log('🏆 Got the boards data!', data)
+  // useEffect(() => {
+  //   const getBoards = async () => {
+  //     try {
+  //       const { data } = await axios.get('/api/boards/') 
+  //       console.log('🏆 Got the boards data!', data)
 
-        setBoards(data)
+  //       setBoards(data)
 
-      } catch (error) {
-        console.log('🥺 error getting your board data 🥺', error)
-        setErrors(true)
-      }
-    }
+  //     } catch (error) {
+  //       console.log('🥺 error getting your board data 🥺', error)
+  //       setErrors(true)
+  //     }
+  //   }
 
-    getBoards()
-  }, [])
+  //   getBoards()
+  // }, [])
 
 
   return (
@@ -42,11 +43,10 @@ const App = () => {
           {/* Landing Page */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/selection" element={<LandingPageSelection />} />
-          {/* Landing page - board selection */}
 
           {/* BOARDS PAGES */}
           <Route path="/boards" element={<BoardsCarousel />} />
-          {/* Terrain pages */}
+          <Route path="/boards/:type" element={<BoardsTerrain />} />
 
           {/* Advice page - super easy - expanding divs */}
 

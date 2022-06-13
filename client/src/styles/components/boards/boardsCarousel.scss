@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+}
+
+
+
+.boards-page-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+
+
+  h1 {
+    margin: 50 auto;
+    text-align: center;
+    // font-family: 'Permanent Marker', cursive;
+    font-weight: bolder;   
+    font-size: 40px; 
+  }
+
+  .board {
+
+  
+    .card {
+      height: 350px;
+      width: 600px;
+      margin: 20px;
+      overflow: hidden;
+  
+      border: 1px solid magenta;
+      border-radius: 4px;
+    
+      display: flex;
+      flex-direction: row;
+  
+      .board-img {
+        min-width: 40% !important;
+        border: 2px solid blue;
+      }
+  
+      .card-body{
+        padding: 10px;
+  
+        .card-title {
+          font-size: 30px;
+          font-family: 'Permanent Marker', cursive;
+      
+        }
+  
+      }
+    }
+  }
+}
