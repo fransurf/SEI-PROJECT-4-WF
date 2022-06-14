@@ -1,0 +1,91 @@
+#advice-page-container{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;  
+  position: absolute;
+  background-color: black;
+
+  h1, h2, span {
+    // color: black;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 80px;
+  }
+
+  #advice {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    }
+
+  }
+
+  #advice-img {
+    transform: translateY(0);
+    width: 50vw;
+  }
+
+  #advice-divs {
+    // width: 40vw;
+    .board-selector {
+      right: 0;
+    }
+}
+
+#flex {
+  background-image: url(../../../../public/assets/landing/park.png);
+  bottom: 58vh;
+  z-index: 6;
+  // animation-delay: .1s;
+}
+#size {
+  background-image: url(../../../../public/assets/landing/powder.png);
+  bottom: 46vh;
+  z-index: 7;
+  // animation-delay: .2s;
+}
+#rocker {
+  background-image: url(../../../../public/assets/landing/all-mountain.png);
+  bottom: 34vh;
+  z-index: 8;
+  // animation-delay: .4s;
+}
+#shape {
+  background-image: url(../../../../public/assets/landing/beginner.png);
+  bottom: 22vh;
+  z-index: 9;
+  // animation-delay: .6s;
+}
+#gender {
+  background-image: url(../../../../public/assets/landing/all.png);
+  bottom: 10vh;
+  z-index: 10;
+  // animation-delay: .8s;
+}
+
+
+// ANIMATION ON PAGE LOAD
+.animate {
+  animation-name: slide-in;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slide-in {
+  0% {right: -60vh;}
+}
+
+// HOVER TRANSITION
+span.long-text{
+  display: none;
+}
+
+.expand:hover span.short-text{
+  display: none;
+}
+.expand:hover span.long-text{
+  display: block;
+}

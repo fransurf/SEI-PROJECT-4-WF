@@ -1,0 +1,102 @@
+#advice-page-container {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: black;
+}
+
+#advice-page-container h1, #advice-page-container h2, #advice-page-container span {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+#advice-page-container h1 {
+  margin-top: 80px;
+}
+
+#advice-page-container #advice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+}
+
+#advice-img {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  width: 50vw;
+}
+
+#advice-divs .board-selector {
+  right: 0;
+}
+
+#flex {
+  background-image: url(../../../../public/assets/landing/park.png);
+  bottom: 58vh;
+  z-index: 6;
+}
+
+#size {
+  background-image: url(../../../../public/assets/landing/powder.png);
+  bottom: 46vh;
+  z-index: 7;
+}
+
+#rocker {
+  background-image: url(../../../../public/assets/landing/all-mountain.png);
+  bottom: 34vh;
+  z-index: 8;
+}
+
+#shape {
+  background-image: url(../../../../public/assets/landing/beginner.png);
+  bottom: 22vh;
+  z-index: 9;
+}
+
+#gender {
+  background-image: url(../../../../public/assets/landing/all.png);
+  bottom: 10vh;
+  z-index: 10;
+}
+
+.animate {
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    right: -60vh;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    right: -60vh;
+  }
+}
+
+span.long-text {
+  display: none;
+}
+
+.expand:hover span.short-text {
+  display: none;
+}
+
+.expand:hover span.long-text {
+  display: block;
+}
+/*# sourceMappingURL=boardsAdvice.css.map */

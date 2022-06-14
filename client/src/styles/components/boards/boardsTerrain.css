@@ -1,0 +1,60 @@
+.terrain-page-container h1, .terrain-page-container h2, .terrain-page-container h3, .terrain-page-container p, .terrain-page-container a {
+  color: black;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.terrain-page-container h1, .terrain-page-container h2, .terrain-page-container h3 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.terrain-img {
+  height: 50vh;
+  width: 40vw;
+  position: absolute;
+}
+
+.img-left {
+  left: 0px;
+  border: 1px solid blue;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.img-right {
+  right: 0px;
+  border: 1px solid magenta;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+.section .board-details {
+  position: absolute;
+  height: inherit;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid lightgreen;
+}
+
+.section .board-details .board-img {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+
+.deets-left {
+  left: 40vw;
+}
+/*# sourceMappingURL=boardsTerrain.css.map */
