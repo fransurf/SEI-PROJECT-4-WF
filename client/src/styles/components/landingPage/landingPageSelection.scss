@@ -2,8 +2,16 @@
 
 .board-selector {
   width: 50vw;
+  min-width: 50vw;
   height: 15vh;
   position: absolute;
+  overflow: hidden;
+  filter: $drop;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  transition: transform .5s ease-in-out;
+
 
   .selector-text {
     text-align: center;
@@ -20,59 +28,52 @@
     transform: translate(-50%, -90%);
     padding: 7px 30px;
   }
-  .selector-text:hover {
-    background-color: rgba(255, 0, 255, 0.7);      
- }
+}
+.board-selector:hover{
+  transform: translateY(-30px);
+  .selector-text{
+    background-color: rgba(255, 0, 255, 0.7);
+  }
+}
+
+.animate {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 #piste {
   background-image: url(../../../../public/assets/landing/piste.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 65vh;
+  bottom: 60vh;
   z-index: 5;
-}
-#piste-text{
-  content: "Piste bashers"
+
 }
 #park {
   background-image: url(../../../../public/assets/landing/park.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 52vh;
+  bottom: 48vh;
   z-index: 6;
 }
 #powder {
   background-image: url(../../../../public/assets/landing/powder.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 39vh;
+  bottom: 36vh;
   z-index: 7;
 }
 #all-mountain {
   background-image: url(../../../../public/assets/landing/all-mountain.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 26vh;
+  bottom: 24vh;
   z-index: 8;
 }
 #beginner {
   background-image: url(../../../../public/assets/landing/beginner.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 13vh;
+  bottom: 12vh;
   z-index: 9;
 }
 #all {
   background-image: url(../../../../public/assets/landing/all.png);
-  filter: $drop;
-  background-size: cover;
-  background-repeat: no-repeat;
   bottom: 0;
   z-index: 10;
+}
+
+@keyframes slide-up{
+ 0% {bottom: -20vh;}
 }

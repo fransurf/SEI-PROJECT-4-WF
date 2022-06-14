@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom'
 
 const LandingPageSelection = () => {
 
-
-
   const [terrains, setTerrains] = useState([])
   const [errors, setErrors] = useState(false)
+
+  const slogans = ['', '', 'All mountain', 'Powder days', 'Piste bashers', 'Park life', 'It\' not all about the pros']
 
   useEffect(() => {
     const getTerrains = async () => {
@@ -39,43 +39,13 @@ const LandingPageSelection = () => {
           const { id, type } = terrain
           return (
             <>
-              <Col key={type} className='board'>
+              <Col key={id} className='board'>
                 <Link to={`/boards/${type}`}>
-                  <div className='board-selector' id={`${type}`}>
-                    <h2 className='selector-text' id={`${type}-text`}>{type} {'   >>>'}</h2>
+                  <div className='board-selector animate' id={`${type}`}>
+                    <h2 className='selector-text' id={`${type}-text`}>{`${slogans[`${id}`]}`} {'   >>>'}</h2>
                   </div>
                 </Link>
               </Col>
-
-              {/* <Link to='/boards/piste'>
-                <div className='board-selector' id='piste'>
-                  <h2 className='selector-text' >Pister bashers {'   >>>'}</h2>
-                </div>
-              </Link>
-
-              <Link to={`/boards/${id[2]}`}>
-                <div className='board-selector' id='powder'>
-                  <h2 className='selector-text'>Powder days {'   >>>'}</h2>
-                </div>
-              </Link>
-
-              <Link to='/boards/park'>
-                <div className='board-selector' id='park'>
-                  <h2 className='selector-text'>Park {'   >>>'}</h2>
-                </div>
-              </Link>
-
-              <Link to={`/boards/${type[1]}`}>
-                <div className='board-selector' id='all-mountain'>
-                  <h2 className='selector-text'>All mountain {'   >>>'}</h2>
-                </div>
-              </Link>
-
-              <Link to='/boards/beginner'>
-                <div className='board-selector' id='beginner'>
-                  <h2 className='selector-text'>Its not all about the pros {'   >>>'}</h2>
-                </div>
-              </Link> */}
 
               <Link to='/boards'>
                 <div className='board-selector' id='all'>
