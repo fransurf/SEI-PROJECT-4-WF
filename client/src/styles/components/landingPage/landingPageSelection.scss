@@ -1,5 +1,4 @@
 
-
 .board-selector {
   width: 50vw;
   min-width: 50vw;
@@ -8,9 +7,10 @@
   overflow: hidden;
   filter: $drop;
   background-size: cover;
-  background-position: right;
+
   background-repeat: no-repeat;
   transition: transform .5s ease-in-out;
+
 
 
   .selector-text {
@@ -29,6 +29,11 @@
     padding: 7px 30px;
   }
 }
+
+.selection {
+  background-position: right;
+}
+
 .board-selector:hover{
   transform: translateY(-30px);
   .selector-text{

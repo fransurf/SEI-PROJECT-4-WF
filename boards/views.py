@@ -23,7 +23,7 @@ class BoardListView(APIView):
   # * GET all boards
   def get(self, _request):
     boards = Board.objects.all() # get all items and fields within the boards table
-    serilialized_boards = BoardSerializer(boards, many=True) # takes queryset and applies serializer
+    serilialized_boards = PopulatedBoardSerializer(boards, many=True) # takes queryset and applies serializer
     # print('Serialised data ->', serilialized_boards.data)
     return Response(serilialized_boards.data, status.HTTP_200_OK)
 

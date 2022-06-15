@@ -27,6 +27,7 @@
   #advice-img {
     transform: translateY(0);
     width: 50vw;
+    z-index: 1;
   }
 
   #advice-divs {
@@ -69,7 +70,7 @@
 
 
 // ANIMATION ON PAGE LOAD
-.animate {
+.advice-animate {
   animation-name: slide-in;
   animation-duration: .7s;
   animation-timing-function: ease-in-out;
@@ -79,13 +80,48 @@
 }
 
 // HOVER TRANSITION
-span.long-text{
+.long-text {
   display: none;
 }
 
-.expand:hover span.short-text{
+.expand:hover .short-text{
   display: none;
 }
-.expand:hover span.long-text{
-  display: block;
+.expand:hover .long-text{
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  a {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+  }
 }
+
+.long-text-box {
+  transform: translate(-100%, 10%);
+  border: 2px solid lightgreen;
+  border-radius: 6px;
+  box-shadow: 5px 10px 18px lightgreen;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.long-text-box-bottom {
+  transform: translate(-100%, -70%);
+  border: 2px solid lightgreen;
+  border-radius: 6px;
+  box-shadow: 5px 10px 18px lightgreen;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.expand {
+  z-index: 100;
+  overflow: visible;
+}
+

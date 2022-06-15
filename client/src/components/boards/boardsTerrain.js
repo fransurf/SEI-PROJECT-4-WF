@@ -23,7 +23,8 @@ const BoardsTerrain = () => {
     const getTerrain = async () => {
       try {
         const { data } = await axios.get(`/api/terrain/${type}`)
-        console.log('Got the terrain data -> 👊🏼', data.boards)
+        console.log('Got the terrain data -> 👊🏼', data)
+        console.log('Got the terrain data.boards -> 👊🏼', data.boards)
 
         // const boardsTerrain = data.boards
 

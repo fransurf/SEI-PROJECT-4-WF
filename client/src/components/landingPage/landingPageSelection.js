@@ -41,14 +41,14 @@ const LandingPageSelection = () => {
             <>
               <Col key={id} className='board'>
                 <Link to={`/boards/${type}`}>
-                  <div className='board-selector animate' id={`${type}`}>
+                  <div className='board-selector selection animate' id={`${type}`}>
                     <h2 className='selector-text' id={`${type}-text`}>{`${slogans[`${id}`]}`} {'   >>>'}</h2>
                   </div>
                 </Link>
               </Col>
 
               <Link to='/boards'>
-                <div className='board-selector animate' id='all'>
+                <div className='board-selector selection animate' id='all'>
                   <h2 className='selector-text'>Show me them all {'   >>>'}</h2>
                 </div>
               </Link>

@@ -31,6 +31,7 @@
   -webkit-transform: translateY(0);
           transform: translateY(0);
   width: 50vw;
+  z-index: 1;
 }
 
 #advice-divs .board-selector {
@@ -67,7 +68,7 @@
   z-index: 10;
 }
 
-.animate {
+.advice-animate {
   -webkit-animation-name: slide-in;
           animation-name: slide-in;
   -webkit-animation-duration: .7s;
@@ -88,15 +89,59 @@
   }
 }
 
-span.long-text {
+.long-text {
   display: none;
 }
 
-.expand:hover span.short-text {
+.expand:hover .short-text {
   display: none;
 }
 
-.expand:hover span.long-text {
-  display: block;
+.expand:hover .long-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.expand:hover .long-text p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.expand:hover .long-text a {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.long-text-box {
+  -webkit-transform: translate(-100%, 10%);
+          transform: translate(-100%, 10%);
+  border: 2px solid lightgreen;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 10px 18px lightgreen;
+          box-shadow: 5px 10px 18px lightgreen;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.long-text-box-bottom {
+  -webkit-transform: translate(-100%, -70%);
+          transform: translate(-100%, -70%);
+  border: 2px solid lightgreen;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 10px 18px lightgreen;
+          box-shadow: 5px 10px 18px lightgreen;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.expand {
+  z-index: 100;
+  overflow: visible;
 }
 /*# sourceMappingURL=boardsAdvice.css.map */
