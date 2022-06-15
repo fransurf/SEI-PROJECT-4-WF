@@ -8,53 +8,99 @@
 
 
 
-.boards-page-container{
+#boards-page-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
   background-color: black;
-
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   h1 {
-    margin: 50 auto;
+    position: absolute;
+    top: 35px;
+    margin: 50px auto;
     text-align: center;
-    // font-family: 'Permanent Marker', cursive;
-    font-weight: bolder;   
+    font-family: 'Permanent Marker', cursive;
     font-size: 40px; 
+    filter: $drop;
   }
 
-  .board {
 
-  
-    .card {
-      height: 350px;
-      width: 600px;
-      margin: 20px;
-      overflow: hidden;
-  
-      border: 1px solid magenta;
-      border-radius: 4px;
-    
-      display: flex;
-      flex-direction: row;
-  
-      .board-img {
-        min-width: 40% !important;
-        border: 2px solid blue;
-      }
-  
-      .card-body{
-        padding: 10px;
-  
-        .card-title {
-          font-size: 30px;
-          font-family: 'Permanent Marker', cursive;
-      
+  .slider {
+    height: 65vh;
+    width: 100vw;
+    transform: translateY(5%);
+    .slick-list{
+      height: inherit;
+      .slick-track {
+        height: inherit;
+        .slick-slide{
+          height: inherit;
+          width: 650px !important;
+          margin: 0 20px;
+          transition: ease-in-out;
+
+          div {
+            height: inherit;
+            .card {
+              height: 63vh;
+              // width: 600px;
+              width: calc(100%/3 - 30px);
+          
+              border: 1px solid magenta;
+              border-radius: 4px;
+              filter: $drop;
+              box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+                1px 2px 4px 0px rgba(0,255,255,0.7),
+                2px 4px 8px 0px rgba(0,255,255,0.7),
+                2px 4px 16px 0px rgba(0,255,255,0.7);
+          
+              display: flex !important;
+          
+              .board-img {
+                height: inherit;
+                min-width: 40% !important;
+                // border: 2px solid blue;
+                left: 0;
+              }
+          
+              .card-body, h3 {
+                padding: 10px;
+                .card-title {
+                  font-size: 30px;
+                  font-family: 'Permanent Marker', cursive;
+
+                }
+              }
+          
+            }
+
+          }
         }
-  
       }
     }
+    .slick-dots {
+      position: absolute;
+      bottom: -50px;
+    }
   }
+  .slick-arrow {
+    height: 100px;
+    width: 100px;
+    filter: contrast(200%);
+    z-index: 100;
+  }
+
+  .slick-dots li button:before {
+    color: lightgreen;
+    font-size: 40px;
+  }
+
+
+
 }

@@ -49,9 +49,11 @@ const BoardsTerrain = () => {
 
       <Row>
         {terrains.map(board => {
-          const { id, make, model, price, description, link } = board
+          // eslint-disable-next-line camelcase
+          const { id, make, model, price, description, link, board_img } = board
           return (
             <>
+              <section className='separator'></section>
               <section key={id} className={`section section-${LR[`${id}`]}`}>
                 <img className={`terrain-img img-${LR[`${id}`]}`} src={`../../assets/terrain/${type}-${LR[`${id}`]}.jpeg`} alt='female boarder photo' />
                 <div className={`board-details deets-${LR[`${id}`]}`}>
@@ -61,9 +63,11 @@ const BoardsTerrain = () => {
                     <p>{description}</p>
                     <a href={link}>TEMPTED?? &gt;&gt;&gt;</a>
                   </div>
-                  <img className={`board-img board-img-${LR[`${id}`]}`} src={`../../assets/${type}/${model}.jpeg`} alt={`image of ${make} - ${model}`}/>
+                  {/* eslint-disable-next-line camelcase */}
+                  <img className={`board-img board-img-${LR[`${id}`]}`} src={`../../assets/boards/${board_img}.jpeg`} alt={`image of ${make} - ${model}`}/>
                 </div>
               </section>
+
             </>
           )
         })}

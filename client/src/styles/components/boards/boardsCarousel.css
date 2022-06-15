@@ -6,7 +6,7 @@
   color: white;
 }
 
-.boards-page-container {
+#boards-page-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,42 +22,85 @@
           align-items: center;
   position: absolute;
   background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.boards-page-container h1 {
-  margin: 50 auto;
+#boards-page-container h1 {
+  position: absolute;
+  top: 20px;
+  margin: 50px auto;
   text-align: center;
+  font-family: 'Permanent Marker', cursive;
   font-weight: bolder;
   font-size: 40px;
 }
 
-.boards-page-container .board .card {
-  height: 350px;
+#boards-page-container .slider {
+  border: 2px solid blue;
+  height: 70vh;
+  width: 100vw;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+#boards-page-container .slider .slick-list {
+  height: inherit;
+}
+
+#boards-page-container .slider .slick-list .slick-track {
+  height: inherit;
+}
+
+#boards-page-container .slider .slick-list .slick-track .slick-slide {
+  height: inherit;
+  width: 600px !important;
+  margin: 0 20px;
+}
+
+#boards-page-container .slider .slick-list .slick-track .slick-slide div {
+  height: inherit;
+}
+
+#boards-page-container .slider .slick-list .slick-track .slick-slide div .card {
+  height: 70vh;
   width: 600px;
-  margin: 20px;
   overflow: hidden;
   border: 1px solid magenta;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-filter: blur();
+          filter: blur();
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-.boards-page-container .board .card .board-img {
+#boards-page-container .slider .slick-list .slick-track .slick-slide div .card .board-img {
+  height: inherit;
   min-width: 40% !important;
-  border: 2px solid blue;
+  left: 0;
 }
 
-.boards-page-container .board .card .card-body {
+#boards-page-container .slider .slick-list .slick-track .slick-slide div .card .card-body, #boards-page-container .slider .slick-list .slick-track .slick-slide div .card h3 {
   padding: 10px;
 }
 
-.boards-page-container .board .card .card-body .card-title {
+#boards-page-container .slider .slick-list .slick-track .slick-slide div .card .card-body .card-title, #boards-page-container .slider .slick-list .slick-track .slick-slide div .card h3 .card-title {
   font-size: 30px;
   font-family: 'Permanent Marker', cursive;
+}
+
+#boards-page-container .slider .slick-dots {
+  position: absolute;
+  bottom: -50px;
+  color: white;
+}
+
+#boards-page-container .slick-arrow {
+  height: 100px;
+  width: 100px;
+  z-index: 10;
 }
 /*# sourceMappingURL=boardsCarousel.css.map */
