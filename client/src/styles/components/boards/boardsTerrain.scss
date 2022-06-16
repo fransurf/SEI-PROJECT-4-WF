@@ -1,9 +1,13 @@
 .terrain-page-container{
-  top: 0;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   // For 'snowy' background coloring
 	background: linear-gradient(-45deg, #ffffff, #ffffff, #edfcff, #ffffc7);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 5s ease infinite;
 
   h1, h2, h3, p, a {
     color: black;
@@ -11,7 +15,13 @@
     padding: 5px 20px;
   }
   h1, h2, h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: $marker;
+  }
+  h1 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 60px;
+    z-index: 20;
   }
 }
 
@@ -28,59 +38,79 @@
 	}
 }
 
+.boards-container {
+  max-width: 1200px;
+  width: 100%;
+  border: 3px solid blue;
+  margin: 0 auto;
 
+  // .separator {
 
-// TERRAIN IMAGES
-.terrain-img {
-  height: 50vh;
-  width: 40vw;
-  position: absolute;
-}
-.img-left{
-  left: 0px;
-  border: 1px solid blue;
-  object-fit: contain;
-}
-.img-right{
-  right: 0px;
-  border: 1px solid magenta;
-  object-fit: contain;
-}
+  // }
 
-// BOARD DETAILS
-.section {
-  height: 50vh;
-  display: flex;
-  margin: 20px;
-  padding: 20px;
-  .board-details {
-    // position: absolute;
-    height: inherit;
-    width: 700px;
+  .terrain-parallax {
     display: flex;
-    border: 2px solid lightgreen;
-    background-color: white;
-    .board-img {
+    max-width: inherit;
+    width: 100%;
+    margin: inherit;
+    // position: relative;
+
+    .terrain-img {
+      // // position: fixed;
+      // // padding: 20px;
+      // background-color: yellow;
+      width: 50%;
+      // z-index: 10;
+    }
+  }
+
+  
+  .section {
+    height: 50vh;
+    width: 100%;
+    border: 3px solid lightgreen;
+    position: relative;
+
+    .board-details {
+      border: 3px solid magenta;
       height: inherit;
-      object-fit: cover;
-      padding: 10px;
+      width: 50%;
+      display: flex;
+      background-color: white;
+    }
+    .deets-right {
+      position: absolute;
+      right: 0 !important;
+    }
+    .deets-left {
+      position: absolute;
+      left: 0 !important;
     }
   }
 }
 
-.deets-left {
-  left: 40vw;
-}
-
-.separator {
-  // position: absolute;
-  height: 300px;
-  width: 120%;
-  background-image: url('../../../assets/community.jpeg');
-  background-repeat: no-repeat;
+#img-park-left {
+  background-image: url('../../../assets/terrain/park-landscape.jpeg');
+  background-repeat: repeat-x;
   background-size: cover;
   background-attachment: fixed;
-  // background-position: center;
-  // border: 5px solid lime;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  // right: 50vw;
+  // top: 0;
+  // left: 0;
 }
-
+// #img-park-right {
+//   background-image: url('../../../assets/terrain/park-left.jpeg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-attachment: fixed;
+//   position: absolute;
+//   height: 100%;
+//   width: 40%;
+//   right: 0;
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+// }

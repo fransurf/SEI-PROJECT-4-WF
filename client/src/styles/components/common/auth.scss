@@ -1,0 +1,90 @@
+h1 {
+  text-align: center;
+}
+.form-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid;
+  height: 100vh;
+  margin: 0px;
+  background-image: url('../../../assets/piste-map.png');
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  form {
+    border: none;
+    background-color: rgba(225, 225, 225, .6);
+    filter: $drop-b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // display: block;
+    width: 40%;
+    min-width: 500px;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    h1 {
+      width: 100%;
+      padding: 0px 0px 20px 0px;
+      margin: 0px 0px 20px 0px;
+      font-size: 1.5em;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      margin: -5px 0 15px;
+      text-align: center;
+    }
+    .auth-error {
+      font-size: 0.8em;
+      color: rgb(255, 0, 0);
+      margin: 0px 0px 5px 0px;
+      text-align: left;
+    }
+    .cent {
+      text-align: center;
+      margin: 0px 0px 0px 0px;
+    }
+    input {
+      width: 100%;
+      margin: 5px 0px 10px 0px;
+      padding: 20px;
+      border: 0.5px solid rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      font-size: 1em;
+      font-family: 'Quicksand', sans-serif;
+      color: blue;
+    }
+    button {
+      margin-top: 15px;
+      padding: 15px;
+      width: 100%;
+      background-color: rgb(9, 179, 0);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      color: rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+    }
+    
+    button:hover {
+      box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+    }
+    button:active {
+      box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+    }
+  }
+}
+

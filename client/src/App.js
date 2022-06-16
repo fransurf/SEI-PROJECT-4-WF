@@ -11,6 +11,8 @@ import LandingPageSelection from './components/landingPage/landingPageSelection'
 import BoardsCarousel from './components/boards/boardsCarousel'
 import BoardsTerrain from './components/boards/boardsTerrain'
 import BoardsAdvice from './components/boards/boardsAdvice'
+import Register from './components/auth/register'
+import Login from './components/auth/login'
 
 
 const App = () => {
@@ -30,10 +32,9 @@ const App = () => {
           <Route path="/boards/:type" element={<BoardsTerrain />} />
           <Route path="/boards/advice" element={<BoardsAdvice />} />
 
-          {/* Advice page - super easy - expanding divs */}
-
           {/* AUTHENTICATION PAGES */}
-          {/* Register */}
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           {/* Login */}
 
           {/* PRELOVED BOARDS PAGES */}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -50,15 +51,15 @@ const BoardsCarousel = () => {
   )
 
   const settings = {
-    // className: 'center',
+    className: 'center',
     centerMode: true,
     centerPadding: '60px',
     dots: true,
     infinite: true,
     speed: 800,
     useCSS: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     // autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
@@ -74,25 +75,32 @@ const BoardsCarousel = () => {
       <h1>GIVE ME THEM ALL!!!</h1>
       {/* <Row className='justify-contents-center'> */}
       <Slider {...settings} className='slider'>
+
+        {/* Map through boards array to return each board in database */}
         {boards.map(board => {
           // eslint-disable-next-line camelcase
           const { id, make, model, price, description, board_img, terrain } = board
           // CREATE AN ARRAY OF TERRAIN TYPES FROM THE TERRAIN OBJECT
           const terrainType = terrain.map(t => t.type)
-          // console.log('TERRAIN ARRAY?? ----->', terrainType)
+          console.log('TERRAIN ARRAY?? ----->', terrainType)
           return (
-
             <div key={id} className='card'>
               <div className='card-img'>
                 {/* eslint-disable-next-line camelcase */}
                 <img className='board-img' src={`../../assets/boards/${board_img}.jpeg`} />
               </div>
-              <div className='card-body'>
+              <div className='right' >
                 <h2 className='card-title'>{make} - {model}</h2>
-                <h3 className='card-title'>£{price}</h3>
-                <p>{description}</p>
-                <h3 className='card-title'>{terrainType.join(', ')}</h3>
+                <div className='card-body'>
+
+                  <h3 >£{price}</h3>
+                  <p>{description}</p>
+
+                  {/* ?? Map through terrain array to produce links to terrain page */}
+                  <h3 >{terrainType.join(', ')}</h3>
+                </div>
               </div>
+
             </div>
 
 

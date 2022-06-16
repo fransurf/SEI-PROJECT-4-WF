@@ -1,9 +1,13 @@
 .terrain-page-container {
-  top: 0;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: linear-gradient(-45deg, #ffffff, #ffffff, #edfcff, #ffffc7);
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
 }
 
 .terrain-page-container h1, .terrain-page-container h2, .terrain-page-container h3, .terrain-page-container p, .terrain-page-container a {
@@ -62,16 +66,17 @@
 
 .section {
   height: 50vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
-  padding: 20px;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .section .board-details {
   height: inherit;
-  width: 700px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,8 +91,14 @@
   padding: 10px;
 }
 
+.deets-right {
+  position: absolute;
+  left: 50vw !important;
+}
+
 .deets-left {
-  left: 40vw;
+  position: absolute;
+  left: 0 !important;
 }
 
 .separator {
@@ -97,5 +108,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#section-park-right {
+  background-image: url("../../../assets/terrain/park-left2.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#section-park-left {
+  background-image: url("../../../assets/terrain/park-right.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right;
+  max-width: 50%;
+  z-index: 10;
 }
 /*# sourceMappingURL=boardsTerrain.css.map */

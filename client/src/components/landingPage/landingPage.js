@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const LandingPage = () => {
@@ -12,8 +12,10 @@ const LandingPage = () => {
           <h1 className='glow'>For Women that Shred</h1>
           <div className='scanlines'></div>
         </div>
-        {/* <img className='arrow-down' src='../../assets/general/arrow-greenDown.png' alt='down arrow'/> */}
       </div>
+      <Link to='/selection' id='selection-link'>
+        <img className='arrows-down' src='../../assets/general/arrows-down1.png' />
+      </Link>
       <img className='landing-img' src='../../assets/general/bwPhoto.jpeg' alt='female boarder photo' />
     </Container>
 

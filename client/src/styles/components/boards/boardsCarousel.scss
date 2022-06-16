@@ -49,7 +49,6 @@
             height: inherit;
             .card {
               height: 63vh;
-              // width: 600px;
               width: calc(100%/3 - 30px);
           
               border: 1px solid magenta;
@@ -59,6 +58,10 @@
                 1px 2px 4px 0px rgba(0,255,255,0.7),
                 2px 4px 8px 0px rgba(0,255,255,0.7),
                 2px 4px 16px 0px rgba(0,255,255,0.7);
+
+              // box-shadow:
+              //   inset 60px 0 120px #f0f,  /* left magenta */
+              //   inset -60px 0 120px #0ff; /* right cyan */
           
               display: flex !important;
           
@@ -68,16 +71,26 @@
                 // border: 2px solid blue;
                 left: 0;
               }
-          
-              .card-body, h3 {
-                padding: 10px;
-                .card-title {
-                  font-size: 30px;
-                  font-family: 'Permanent Marker', cursive;
+              .right{
+                width: inherit !important;
+
+                .card-body, h3 {
+                  width: 66%;
+                  padding: 15px;
+                  h3 {
+                    font-size: 30px;
+                    font-family: 'Permanent Marker', cursive;
+                  }
 
                 }
+                .card-title{
+                  width: 500px !important;
+                  font-size: 40px;
+                  transform: translateX(-100px);
+                  mix-blend-mode: difference;
+                }
               }
-          
+
             }
 
           }
@@ -92,7 +105,7 @@
   .slick-arrow {
     height: 100px;
     width: 100px;
-    filter: contrast(200%);
+    filter: contrast(200%) $drop-b; 
     z-index: 100;
   }
 
@@ -100,7 +113,5 @@
     color: lightgreen;
     font-size: 40px;
   }
-
-
 
 }

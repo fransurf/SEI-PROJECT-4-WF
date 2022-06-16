@@ -14,8 +14,8 @@ const BoardsTerrain = () => {
 
   const [terrains, setTerrains] = useState([])
   const [errors, setErrors] = useState(false)
-  const { type, id } = useParams()
-  const LR = ['left', 'right', 'left', 'right', 'left', 'right', 'left', 'right', 'left', 'right', 'left', 'right']
+  const { type } = useParams()
+  const LR = ['right', 'left', 'right', 'left', 'right', 'left', 'right', 'left', 'right', 'left', 'right', 'left']
 
   // console.log('type from params ->', type)
 
@@ -46,35 +46,38 @@ const BoardsTerrain = () => {
 
     <Container className='terrain-page-container'>
       <h1> {type} boards</h1>
+      <Container className='boards-container'>
+        {/* IMAGES FOR THE TERRAIN PARALLAX BACKGROUND */}
+        <div className='terrain-parallax'>
+          <div className='terrain-img' id={`img-${type}-left`}></div>
+          <div className='terrain-img' id={`img-${type}-right`}></div>
+        </div>
 
-      <Row>
-        {terrains.map(board => {
+        {terrains.map((board, i) => {
           // eslint-disable-next-line camelcase
           const { id, make, model, price, description, link, board_img } = board
+          // const index = i
+          // console.log('Has the index really worked?? --->', i)
+
           return (
             <>
               <section className='separator'></section>
-              <section key={id} className={`section section-${LR[`${id}`]}`}>
-                <img className={`terrain-img img-${LR[`${id}`]}`} src={`../../assets/terrain/${type}-${LR[`${id}`]}.jpeg`} alt='female boarder photo' />
-                <div className={`board-details deets-${LR[`${id}`]}`}>
-                  <div className={`text-${LR[`${id}`]}`}>
+              <section key={id} className={`section section-${LR[i]}`}  >
+                <div className={`board-details deets-${LR[i]}`} id={`section-${type}-${LR[i]}`}>
+                  <div className={`text-${LR[i]}`}>
                     <h2>{make} - {model}</h2>
                     <h3>PRICE: £{price}</h3>
                     <p>{description}</p>
-                    <a href={link}>TEMPTED?? &gt;&gt;&gt;</a>
+                    <a href={link} target='blank'>TEMPTED?? &gt;&gt;&gt;</a>
                   </div>
                   {/* eslint-disable-next-line camelcase */}
-                  <img className={`board-img board-img-${LR[`${id}`]}`} src={`../../assets/boards/${board_img}.jpeg`} alt={`image of ${make} - ${model}`}/>
+                  <img className={`board-img board-img-${LR[i]}`} src={`../../assets/boards/${board_img}.jpeg`} alt={`image of ${make} - ${model}`} />
                 </div>
               </section>
-
             </>
           )
         })}
-      </Row>
-
-
-
+      </Container>
     </Container >
 
   )
