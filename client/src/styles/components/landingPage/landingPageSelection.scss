@@ -46,6 +46,9 @@
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
+@keyframes slide-up{
+  0% {bottom: -20vh;}
+ }
 
 #piste {
   background-image: url(../../../../public/assets/landing/piste.png);
@@ -79,6 +82,3 @@
   z-index: 10;
 }
 
-@keyframes slide-up{
- 0% {bottom: -20vh;}
-}

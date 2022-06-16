@@ -13,6 +13,7 @@ import BoardsTerrain from './components/boards/boardsTerrain'
 import BoardsAdvice from './components/boards/boardsAdvice'
 import Register from './components/auth/register'
 import Login from './components/auth/login'
+import PrelovedBoards from './components/preloved/prelovedBoards'
 
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
           {/* Login */}
 
           {/* PRELOVED BOARDS PAGES */}
+          <Route path="/preloved" element={<PrelovedBoards />} />
           {/* FORM - preloved boards */}
           {/* FORM - preloved index */}
 

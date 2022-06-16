@@ -1,41 +1,34 @@
 .terrain-page-container{
   position: absolute;
-  top: 60px;
+  top: 45px;
   // bottom: 0;
   left: 0;
   right: 0;
-  // For 'snowy' background coloring
-	background: linear-gradient(-45deg, #ffffff, #ffffff, #edfcff, #ffffc7);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+
+  .page-title{
+    font-size: 50px;
+    z-index: 100;
+    filter: $drop-w;
+    margin-top: 0;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 50px;
+  }
+
 
   h1, h2, h3, p, a {
     color: black;
     text-align: center;
     padding: 5px 20px;
   }
-  h1, h2, h3 {
+  h1, h2, h3, a {
     font-family: $marker;
   }
-  h1 {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 60px;
-    z-index: 20;
-  }
-}
 
-// For 'snowy' background coloring
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  a {
+    text-align: center;
+  }
 }
 
 .boards-container {
@@ -66,7 +59,7 @@
 
   
   .section {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     // border: 3px solid lightgreen;
     position: relative;
@@ -74,7 +67,8 @@
     .board-details {
       // border: 3px solid magenta;
       height: inherit;
-      width: 40%;
+      width: 45%;
+      min-width: 540px;
       display: flex;
       background-color: white;
       border-radius: 4px;

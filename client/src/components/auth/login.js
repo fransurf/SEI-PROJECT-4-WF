@@ -1,26 +1,36 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
+
+
+
 const Login = () => {
   // Navigate
   const navigate = useNavigate()
+
   // * Update form data
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   })
+
   const [errors, setErrors] = useState(false)
+  
+  
   // * Save token to local storage
   const setTokenToLocalStorage = (token) => {
     window.localStorage.setItem('women-that-shred', token)
   }
+  
   // * State tracking form edits by user
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
     setErrors(false)
   }
+  
   // * Submit login request
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -28,9 +38,10 @@ const Login = () => {
       const { data } = await axios.post('/api/auth/login/', formData)
       console.log('Token off the data request?? ->', data.token)
       setTokenToLocalStorage(data.token)
+
       // ? SET NAVIGATION TO LAST PAGE
       // * CHANGE THIS!!
-      navigate('/selection')
+      navigate('/preloved')
     } catch (error) {
       console.log(error)
       setErrors(true)
@@ -49,7 +60,7 @@ const Login = () => {
             <label htmlFor='password'>Password</label>
             <input type='password' name='password' className='input' placeholder='Password' required value={formData.password} onChange={handleChange} />
             {errors && <p className='text-danger text-center'>Unauthorised</p>}
-            <button type="submit" className="submit-btn">Register</button>
+            <button type="submit" className="submit-btn">Log in</button>
           </form>
         </Row>
       </Container>

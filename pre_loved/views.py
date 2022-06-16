@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework.exceptions import NotFound, ValidationError, PermissionDenied
 
 from pre_loved.serializers.populated import PopulatedPre_LovedSerializer
@@ -14,11 +14,11 @@ from .serializers.common import Pre_LovedSerializer
 # GET all preloved & POST a preloved
 
 class PrelovedListView(APIView):
-  permission_classes = (IsAuthenticated, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
   def get(self, _request):
     preloved = Pre_loved.objects.all()
-    serialized_preloved = Pre_LovedSerializer(preloved, many=True)
+    serialized_preloved = PopulatedPre_LovedSerializer(preloved, many=True)
     print('serialised preloveds', serialized_preloved.data)
     return Response(serialized_preloved.data, status.HTTP_200_OK)
 

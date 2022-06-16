@@ -26,13 +26,14 @@
     bottom: 5%;
     left: 25%;
     filter: invert(100%) $drop;
+    transition: transform .1s ease-out;
   }
   .arrows-down:hover {
-    // transition: filter 300ms ease-in;
     filter: invert(100%) $drop-g;
     cursor: pointer;
-  }
+    transform: translateY(-30px);
 
+  }
 
   .landing-img {
     top: 0;

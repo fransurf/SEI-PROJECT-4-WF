@@ -50,7 +50,7 @@ const BoardsTerrain = () => {
         <div className='terrain-img' id={`img-${type}-left`}></div>
         <div className='terrain-img' id={`img-${type}-right`}></div>
       </div>
-      <h1> {type} boards</h1>
+      <h1 className='page-title'> {type} boards</h1>
       <Container className='boards-container'>
 
 

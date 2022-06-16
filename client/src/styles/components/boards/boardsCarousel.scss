@@ -47,9 +47,10 @@
 
           div {
             height: inherit;
+            width: inherit;
             .card {
               height: 63vh;
-              width: calc(100%/3 - 30px);
+              width: inherit;
           
               border: 1px solid magenta;
               border-radius: 4px;
@@ -88,6 +89,7 @@
                   font-size: 40px;
                   transform: translateX(-100px);
                   mix-blend-mode: difference;
+                  // text-align: right;
                 }
               }
 
