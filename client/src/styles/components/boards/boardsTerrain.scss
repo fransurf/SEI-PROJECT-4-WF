@@ -1,7 +1,7 @@
 .terrain-page-container{
   position: absolute;
-  top: 50px;
-  bottom: 0;
+  top: 60px;
+  // bottom: 0;
   left: 0;
   right: 0;
   // For 'snowy' background coloring
@@ -41,42 +41,44 @@
 .boards-container {
   max-width: 1200px;
   width: 100%;
-  border: 3px solid blue;
+  // border: 3px solid blue;
   margin: 0 auto;
 
   // .separator {
 
   // }
 
-  .terrain-parallax {
-    display: flex;
-    max-width: inherit;
-    width: 100%;
-    margin: inherit;
-    // position: relative;
+  // .terrain-parallax {
+  //   display: flex;
+  //   max-width: inherit;
+  //   width: 100%;
+  //   margin: inherit;
+  //   // position: relative;
 
-    .terrain-img {
-      // // position: fixed;
-      // // padding: 20px;
-      // background-color: yellow;
-      width: 50%;
-      // z-index: 10;
-    }
-  }
+  //   .terrain-img {
+  //     // // position: fixed;
+  //     // // padding: 20px;
+  //     // background-color: yellow;
+  //     width: 40%;
+  //     // z-index: 10;
+  //   }
+  // }
 
   
   .section {
     height: 50vh;
     width: 100%;
-    border: 3px solid lightgreen;
+    // border: 3px solid lightgreen;
     position: relative;
 
     .board-details {
-      border: 3px solid magenta;
+      // border: 3px solid magenta;
       height: inherit;
-      width: 50%;
+      width: 40%;
       display: flex;
       background-color: white;
+      border-radius: 4px;
+      box-shadow: $skblue-lift
     }
     .deets-right {
       position: absolute;
@@ -85,22 +87,41 @@
     .deets-left {
       position: absolute;
       left: 0 !important;
+      flex-direction: row-reverse;
     }
   }
 }
 
-#img-park-left {
-  background-image: url('../../../assets/terrain/park-landscape.jpeg');
-  background-repeat: repeat-x;
+.terrain-img{
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
   height: 100%;
   width: 100%;
-  // right: 50vw;
-  // top: 0;
-  // left: 0;
 }
+
+
+#img-park-left {
+  background-image: url('../../../assets/terrain/park-landscape.jpeg');
+}
+#img-powder-left {
+  background-image: url('../../../assets/terrain/powder-landscape2.jpeg');
+}
+#img-piste-left {
+  background-image: url('../../../assets/terrain/piste-landscape.jpeg');
+}
+#img-beginner-left {
+  background-image: url('../../../assets/terrain/beginner-landscape.jpeg');
+}
+#img-all-mountain-left {
+  background-image: url('../../../assets/terrain/all-mountain-landscape.jpeg');
+}
+
+
+
+
+
+
 // #img-park-right {
 //   background-image: url('../../../assets/terrain/park-left.jpeg');
 //   background-repeat: no-repeat;

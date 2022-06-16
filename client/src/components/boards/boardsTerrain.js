@@ -45,13 +45,14 @@ const BoardsTerrain = () => {
   return (
 
     <Container className='terrain-page-container'>
+      {/* IMAGES FOR THE TERRAIN PARALLAX BACKGROUND */}
+      <div className='terrain-parallax'>
+        <div className='terrain-img' id={`img-${type}-left`}></div>
+        <div className='terrain-img' id={`img-${type}-right`}></div>
+      </div>
       <h1> {type} boards</h1>
       <Container className='boards-container'>
-        {/* IMAGES FOR THE TERRAIN PARALLAX BACKGROUND */}
-        <div className='terrain-parallax'>
-          <div className='terrain-img' id={`img-${type}-left`}></div>
-          <div className='terrain-img' id={`img-${type}-right`}></div>
-        </div>
+
 
         {terrains.map((board, i) => {
           // eslint-disable-next-line camelcase
