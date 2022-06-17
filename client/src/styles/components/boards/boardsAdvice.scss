@@ -25,9 +25,10 @@
   }
 
   #advice-img {
-    transform: translateY(0);
+    // transform: translateY(0);
     width: 50vw;
     z-index: 1;
+    bottom: 10vh;
   }
 
   #advice-divs {

@@ -53,7 +53,7 @@ const Login = () => {
         <Row>
           <form className='login-form col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-4' onSubmit={handleSubmit}>
 
-            <h1>Login</h1>
+            <h1 className='auth-title'>Login</h1>
             <h2>Only members can access the preloved boards pages</h2>
 
             {/* Email */}
@@ -64,7 +64,7 @@ const Login = () => {
             <input type='password' name='password' className='input' placeholder='Password' required value={formData.password} onChange={handleChange} />
             {errors && <p className='text-danger text-center'>Unauthorised</p>}
 
-            <Link className='link' to='/register'>Not a member yet?</Link>
+            <Link className='link' id='register-link' to='/register'>Not a member yet?</Link>
             
             <button type="submit" className="submit-btn">Log in</button>
           </form>

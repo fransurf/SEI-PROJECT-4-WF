@@ -1,10 +1,20 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
+import { userIsAuthenticated } from '../helpers/auth'
 
 
 const NavBar = () => {
 
+  const navigate = useNavigate()
+
+  // Function to remove token and navigate to landing page
+  const handleLogout = () => {
+    window.localStorage.removeItem('women-that-shred')
+    // ^ removes token
+    navigate('/')
+  }
 
   return (
     <header>
@@ -14,7 +24,18 @@ const NavBar = () => {
         <Link to="/" className="logo">WTS</Link>
         <Link to="/preloved" className="logo">Preloved</Link>
 
-        <Link to="/login" className="logo">Login</Link>
+        {/* SHOW 'LOGIN' WHEN LOGEED OUT & 'LOGOUT' WHEN LOGGED IN */}
+        {userIsAuthenticated() ?
+          <>
+            <Link onClick={handleLogout} to='' className="logo" alt='Logout'>Logout</Link>
+          </>
+          :
+          <>
+            <Link to="/login" className="logo" alt='Login'>Login</Link>
+          </>
+
+        }
+        
       </nav>
     </header>
 

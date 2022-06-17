@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
 
@@ -8,8 +9,8 @@ import Container from 'react-bootstrap/Container'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import LeftArrow from '../../assets/arrow-greenLeft.png'
-import RightArrow from '../../assets/arrow-greenRight.png'
+import LeftArrow from '../../assets/arrow-pinkLeft.png'
+import RightArrow from '../../assets/arrow-pinkRight.png'
 
 const BoardsCarousel = () => {
 
@@ -71,6 +72,9 @@ const BoardsCarousel = () => {
     <Container id='boards-page-container'>
       <div className='bg'></div>
       <h1>GIVE ME THEM ALL!!!</h1>
+      {/* Link to advice page */}
+      <Link to='/boards/advice' className='link'>Need some advice?</Link>
+      
       {/* <Row className='justify-contents-center'> */}
       <Slider {...settings} className='slider'>
 
@@ -88,14 +92,16 @@ const BoardsCarousel = () => {
                 <img className='board-img' src={`../../assets/boards/${board_img}.jpeg`} />
               </div>
               <div className='right' >
-                <h2 className='card-title'>{make} - {model}</h2>
+                <div></div>
+                
                 <div className='card-body'>
+                  <h2 className='card-title'>{make} - {model}</h2>
 
                   <h3 >£{price}</h3>
                   <p>{description}</p>
 
                   {/* ?? Map through terrain array to produce links to terrain page */}
-                  <h3 >{terrainType.join(', ')}</h3>
+                  <h3 id='terrain-type' >{terrainType.join(', ')}</h3>
                 </div>
               </div>
 

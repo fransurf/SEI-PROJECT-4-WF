@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
 
@@ -44,12 +44,12 @@ const BoardsTerrain = () => {
       {/* IMAGES FOR THE TERRAIN PARALLAX BACKGROUND */}
       <div className='terrain-parallax'>
         <div className='terrain-img' id={`img-${type}-left`}></div>
-        <div className='terrain-img' id={`img-${type}-right`}></div>
       </div>
       <h1 className='page-title'> {type} boards</h1>
+      {/* Link to advice page */}
+      <Link to='/boards/advice' className='link'>Need some advice?</Link>
+
       <Container className='boards-container'>
-
-
         {terrains.map((board, i) => {
           // eslint-disable-next-line camelcase
           const { id, make, model, price, description, link, board_img } = board
@@ -65,7 +65,7 @@ const BoardsTerrain = () => {
                     <h2>{make} - {model}</h2>
                     <h3>PRICE: £{price}</h3>
                     <p>{description}</p>
-                    <a href={link} target='blank'>TEMPTED?? &gt;&gt;&gt;</a>
+                    <a href={link} className='link' id='tempted' target='blank'>TEMPTED??</a>
                   </div>
                   {/* eslint-disable-next-line camelcase */}
                   <img className={`board-img board-img-${LR[i]}`} src={`../../assets/boards/${board_img}.jpeg`} alt={`image of ${make} - ${model}`} />

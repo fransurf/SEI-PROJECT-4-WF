@@ -1,0 +1,23 @@
+.link {
+  font-family: $marker;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: right !important;
+  padding: 0 20px;
+  width: 100%;
+  z-index: 1000 !important;
+}
+.link:hover{
+  cursor: pointer;
+  color: magenta;
+}
+
+#no-access{
+  font-size: 40px;
+  text-align: center;
+  width: 100vw !important;
+  margin-top: 20%;
+  text-decoration: none;
+  position: absolute;
+  // border: 2 px solid magenta;
+}

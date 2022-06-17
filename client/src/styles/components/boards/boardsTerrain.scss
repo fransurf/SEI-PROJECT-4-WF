@@ -31,33 +31,20 @@
   }
 }
 
+#tempted {
+  #tempted:hover{
+    filter: invert(100%) $drop-g !important;
+    cursor: pointer;
+    color: lightgreen;
+  }
+}
+
 .boards-container {
   max-width: 1200px;
   width: 100%;
   // border: 3px solid blue;
   margin: 0 auto;
 
-  // .separator {
-
-  // }
-
-  // .terrain-parallax {
-  //   display: flex;
-  //   max-width: inherit;
-  //   width: 100%;
-  //   margin: inherit;
-  //   // position: relative;
-
-  //   .terrain-img {
-  //     // // position: fixed;
-  //     // // padding: 20px;
-  //     // background-color: yellow;
-  //     width: 40%;
-  //     // z-index: 10;
-  //   }
-  // }
-
-  
   .section {
     height: 60vh;
     width: 100%;

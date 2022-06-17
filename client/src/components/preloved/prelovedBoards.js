@@ -46,33 +46,46 @@ const PrelovedBoards = () => {
 
 
   return (
-    <Container className='terrain-page-container preloved-page-container'>
-      <h1>Preloved boards wanting new owners</h1>
-      <Link to='/preloved/add' className='link' >Got a board to sell?</Link>
+    < Container className='terrain-page-container preloved-page-container' >
+      {userIsAuthenticated() ?
+        <>
+          <h1 className='preloved-title'>Preloved boards wanting new owners</h1>
+          <Link to='/preloved/add' className='link' >Got a board to sell?</Link>
 
-      <Row className='flex'>
-        {preloved.map(board => {
-          {/* eslint-disable-next-line camelcase */}
-          const { id, board_img, make, model, description, price, owner } = board
-          console.log('owner--->', owner.email)
-          return (
-            <Col key={id} md='6' lg='4'  >
-              <Card>
-                {/* eslint-disable-next-line camelcase */}
-                <Card.Img className='preloved-img' variant='left' src={`../../../assets/preloved/${board_img}.jpeg`} />
-                <Card.Body className='card-body'>
-                  <Card.Title className='title mb-0' >{make} - {model}</Card.Title>
-                  <Card.Title className='title mb-0' >{`£${price}`}</Card.Title>
-                  <Card.Text className='description'>{description}</Card.Text>
-                  <Card.Text className='description'><span>INTERESTED? </span>{`Contact the owner -> ${owner.username} (${owner.email})`}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+          <Row className='flex'>
+            {preloved.map(board => {
+              {/* eslint-disable-next-line camelcase */ }
+              const { id, board_img, make, model, description, price, owner } = board
+              console.log('owner--->', owner.email)
+              return (
+                <Col key={id} md='6' lg='4'  >
+                  <Card>
+                    {/* eslint-disable-next-line camelcase */}
+                    <Card.Img className='preloved-img' variant='left' src={`../../../assets/preloved/${board_img}.jpeg`} />
+                    <Card.Body className='card-body'>
+                      <Card.Title className='title mb-0' >{make} - {model}</Card.Title>
+                      <Card.Title className='title mb-0' >{`£${price}`}</Card.Title>
+                      <Card.Text className='description'>{description}</Card.Text>
+                      <Card.Text className='description'><span>INTERESTED? </span>{`Contact the owner -> ${owner.username} (${owner.email})`}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
 
-          )
-        })}
-      </Row>
-    </Container>
+              )
+            })}
+          </Row>
+        </>
+
+
+        :
+        <>
+          <Link to="/login" id='no-access' alt='Login'>🚨 Only members can access the preloved boards pages 🚨</Link>
+        </>
+
+      }
+    </Container >
+
+
 
   )
 }
