@@ -74,7 +74,7 @@ const BoardsCarousel = () => {
       <h1>GIVE ME THEM ALL!!!</h1>
       {/* Link to advice page */}
       <Link to='/boards/advice' className='link'>Need some advice?</Link>
-      
+
       {/* <Row className='justify-contents-center'> */}
       <Slider {...settings} className='slider'>
 
@@ -84,7 +84,7 @@ const BoardsCarousel = () => {
           const { id, make, model, price, description, board_img, terrain } = board
           // CREATE AN ARRAY OF TERRAIN TYPES FROM THE TERRAIN OBJECT
           const terrainType = terrain.map(t => t.type)
-          console.log('TERRAIN ARRAY?? ----->', terrainType)
+          // console.log('TERRAIN ARRAY?? ----->', terrainType)
           return (
             <div key={id} className='card'>
               <div className='card-img'>
@@ -93,15 +93,21 @@ const BoardsCarousel = () => {
               </div>
               <div className='right' >
                 <div></div>
-                
+
                 <div className='card-body'>
                   <h2 className='card-title'>{make} - {model}</h2>
 
                   <h3 >£{price}</h3>
                   <p>{description}</p>
 
-                  {/* ?? Map through terrain array to produce links to terrain page */}
+                  {/* ?? Map through terrain array to produce links to terrain page
+                  {terrainType.forEach((type) => {
+                    // console.log('terrain type from within map --->', model, type)
+                    <a href={`/boards/${type}`} className='link carousel-link'>{type}</a>
+                  })} */}
+
                   <h3 id='terrain-type' >{terrainType.join(', ')}</h3>
+                  {/* <a href={`/boards/${type}`} className='link carousel-link' >{terrainType.join(', ')}</a> */}
                 </div>
               </div>
 
