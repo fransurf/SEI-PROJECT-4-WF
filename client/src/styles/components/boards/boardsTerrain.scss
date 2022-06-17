@@ -72,7 +72,7 @@
       display: flex;
       background-color: white;
       border-radius: 4px;
-      box-shadow: $skblue-lift
+      box-shadow: $skblue-lift;
     }
     .deets-right {
       position: absolute;
@@ -110,22 +110,3 @@
 #img-all-mountain-left {
   background-image: url('../../../assets/terrain/all-mountain-landscape.jpeg');
 }
-
-
-
-
-
-
-// #img-park-right {
-//   background-image: url('../../../assets/terrain/park-left.jpeg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-attachment: fixed;
-//   position: absolute;
-//   height: 100%;
-//   width: 40%;
-//   right: 0;
-//   // position: absolute;
-//   // top: 0;
-//   // left: 0;
-// }

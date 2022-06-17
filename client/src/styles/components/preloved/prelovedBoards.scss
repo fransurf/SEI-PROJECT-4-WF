@@ -1,26 +1,61 @@
 .preloved-page-container {
+  // Girls with boards background image
   background-image: url('../../../assets/community.jpeg');
   background-size: cover;
   background-attachment: fixed;
+
   position: absolute;
   height: 100%;
   width: 100%;
+
+  h1 {
+    filter: $drop-w;
+  }
+  .link {
+    font-size: 30px;
+    right: 10%;
+    // color: lightgreen;
+    filter: $drop-w;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
 
   .card {
     height: 480px;
     max-width: 380px;
     margin: 20px;
     margin-bottom: 10px;
-    // border: 1px solid white;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
     border-radius: 4px;
-    padding-top: 20px;
+
+    box-shadow: $skblue-lift;
+    background: $snow-bg;
+    background-size: 400% 400%;
+    animation: $snow-an;
+
+    // For 'snowy' background coloring
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     overflow: hidden;
     display: flex;
+
     .card-body {
       color: black;
       height: 250px;
-      .title{
+
+      .title {
         color: black;
         font-weight: 900;
         font-size: 18px;
@@ -29,10 +64,15 @@
         font-family: $marker;
         font-size: 25px;
       }
+      .preloved-img{
+        width: 30%;
+        height: 100%;
+      }
+      span {
+        font-weight: bold;
+        color: black;
+      }
     }
   }
 
-
 }
-
-

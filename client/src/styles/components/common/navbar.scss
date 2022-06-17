@@ -18,12 +18,11 @@ header {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  background: linear-gradient(-45deg, #ffffff, #ffffff, #edfcff, #ffffc7);
-  // box-shadow:
-  // inset 60px 0 120px #f0f,
-  // inset -60px 0 120px #0ff;
+
+  // For 'snowy' background coloring
+  background: $snow-bg;
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: $snow-an;
 }
 
 .logo{
@@ -37,14 +36,7 @@ header {
 
 h2 {
   font-family: $marker;
-
 }
-
-
-
-  // For 'snowy' background coloring
-;
-
 
   // For 'snowy' background coloring
 @keyframes gradient {

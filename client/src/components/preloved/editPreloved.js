@@ -68,7 +68,7 @@ const EditPreloved = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      navigate('/api/preloved/')
+      navigate('/preloved/')
 
     } catch (err) {
       console.log(err)

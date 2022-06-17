@@ -1,9 +1,13 @@
+// Fonts
+$marker: 'Permanent Marker', cursive;
+$body: 'Rajdhani', sans-serif;
 
+// Shadow effects
 $drop: drop-shadow(0 0 5px magenta);
 $drop-g: drop-shadow(0 0 10px lightgreen);
 $drop-b: drop-shadow(0 0 5px blue);
 $drop-lb: drop-shadow(0 0 5px rgba(0,255,255,0.7));
-$drop-w: drop-shadow(0 0 5px rgba(255,255,255,0.7));
+$drop-w: drop-shadow(5px 8px 5px rgba(255,255,255,0.7));
 
 $blue-lift: 0px 1px 2px 0px rgba(0,255,255,0.7),
 1px 2px 4px 0px rgba(0,255,255,0.7),
@@ -36,5 +40,7 @@ inset -60px 0 120px #0ff;
 // border radius
 $br: 4px;
 
-$marker: 'Permanent Marker', cursive;
-$body: 'Rajdhani', sans-serif;
+// Snow effect background
+$snow-bg: linear-gradient(-45deg, #ffffff, #ffffff, #edfcff, #ffffc7);
+$snow-an: gradient 5s ease infinite;
+

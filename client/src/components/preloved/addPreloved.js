@@ -35,7 +35,7 @@ const AddPreloved = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      navigate('/api/preloved/')
+      navigate('/preloved/')
     } catch (error) {
       console.log('preloved add error --->', error)
       console.log('preloved add error response --->', error.response.data.errors)
