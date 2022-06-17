@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
@@ -52,14 +52,20 @@ const Login = () => {
       <Container>
         <Row>
           <form className='login-form col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-4' onSubmit={handleSubmit}>
+
             <h1>Login</h1>
+            <h2>Only members can access the preloved boards pages</h2>
+
             {/* Email */}
-            <label htmlFor='email'>Email</label>
+            <label className='label' htmlFor='email'>Email</label>
             <input type='email' name='email' className='input' placeholder='Email' required value={formData.email} onChange={handleChange} />
             {/* Password */}
-            <label htmlFor='password'>Password</label>
+            <label className='label' htmlFor='password'>Password</label>
             <input type='password' name='password' className='input' placeholder='Password' required value={formData.password} onChange={handleChange} />
             {errors && <p className='text-danger text-center'>Unauthorised</p>}
+
+            <Link className='link' to='/register'>Not a member yet?</Link>
+            
             <button type="submit" className="submit-btn">Log in</button>
           </form>
         </Row>

@@ -14,6 +14,8 @@ import BoardsAdvice from './components/boards/boardsAdvice'
 import Register from './components/auth/register'
 import Login from './components/auth/login'
 import PrelovedBoards from './components/preloved/prelovedBoards'
+import AddPreloved from './components/preloved/addPreloved'
+import EditPreloved from './components/preloved/editPreloved'
 
 
 const App = () => {
@@ -40,8 +42,9 @@ const App = () => {
 
           {/* PRELOVED BOARDS PAGES */}
           <Route path="/preloved" element={<PrelovedBoards />} />
-          {/* FORM - preloved boards */}
-          {/* FORM - preloved index */}
+          <Route path="/preloved/add" element={<AddPreloved />} />
+          <Route path="/preloved/ed" element={<EditPreloved />} />
+
 
         </Routes>
       </BrowserRouter>

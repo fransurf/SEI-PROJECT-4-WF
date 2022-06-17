@@ -45,10 +45,11 @@ const PrelovedBoards = () => {
 
 
 
-
   return (
     <Container className='terrain-page-container preloved-page-container'>
-      <h1>YOUR GONNA GET SOME PRELOVED BOARDS HERE - JUST YOU WATCH</h1>
+      <h1>Preloved boards wanting new owners</h1>
+      <Link to='/preloved/add' className='link' >Outgrown your board?</Link>
+
       <Row>
         {preloved.map(board => {
           {/* eslint-disable-next-line camelcase */}

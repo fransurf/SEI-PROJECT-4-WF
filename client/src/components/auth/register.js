@@ -54,19 +54,19 @@ const Register = () => {
           <form className='registration-form' onSubmit={handleSubmit}>
             <h1>Register</h1>
             {/* Username */}
-            <label htmlFor='username'>Username</label>
+            <label className='label' htmlFor='username'>Username</label>
             <input type='text' name='username' className='input' placeholder='Username' value={formData.username} onChange={handleChange} />
             {errors.username && <p className='text-danger'>{errors.username}</p> }
             {/* Email */}
-            <label htmlFor='email'>Email</label>
+            <label className='label' htmlFor='email'>Email</label>
             <input type='email' name='email' className='input' placeholder='Email' value={formData.email} onChange={handleChange} />
             {errors.email && <p className='text-danger'>{errors.email}</p> }
             {/* Password */}
-            <label htmlFor='password'>Password</label>
+            <label className='label' htmlFor='password'>Password</label>
             <input type='password' name='password' className='input' placeholder='Password' value={formData.password} onChange={handleChange} />
             {errors.password && <p className='text-danger'>{errors.password}</p> }
             {/* Password Confirmation */}
-            <label htmlFor='password_confirmation'>Password Confirmation</label>
+            <label className='label' htmlFor='password_confirmation'>Password Confirmation</label>
             <input type='password' name='password_confirmation' className='input' placeholder='Password Confirmation' value={formData.password_confirmation} onChange={handleChange} />
             {errors.password_confirmation && <p className='text-danger'>{errors.password_confirmation}</p> }
             {/* Submit */}
