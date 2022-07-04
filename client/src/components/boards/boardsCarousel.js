@@ -58,7 +58,7 @@ const BoardsCarousel = () => {
     speed: 800,
     useCSS: true,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     // autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
@@ -100,14 +100,15 @@ const BoardsCarousel = () => {
                   <h3 >£{price}</h3>
                   <p>{description}</p>
 
-                  {/* ?? Map through terrain array to produce links to terrain page
-                  {terrainType.forEach((type) => {
-                    // console.log('terrain type from within map --->', model, type)
-                    <a href={`/boards/${type}`} className='link carousel-link'>{type}</a>
-                  })} */}
+                  {/* ?? Map through terrain array to produce links to terrain pages */}
+                  <div id='terrain-links'>
+                    {terrainType.map((type) => {
+                      return (
+                        <a href={`/boards/${type}`} key={type} className='link carousel-link'>{type}</a>
+                      )
+                    })}
+                  </div>
 
-                  <h3 id='terrain-type' >{terrainType.join(', ')}</h3>
-                  {/* <a href={`/boards/${type}`} className='link carousel-link' >{terrainType.join(', ')}</a> */}
                 </div>
               </div>
 

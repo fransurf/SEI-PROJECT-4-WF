@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 1000 !important;
 }
+
 .link:hover{
   cursor: pointer;
   color: magenta;
@@ -23,6 +24,7 @@
   // border: 2 px solid magenta;
   box-shadow: $drop-w;
 }
+
 #no-access:hover{
   cursor: pointer;
   color: magenta;

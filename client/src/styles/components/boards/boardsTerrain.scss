@@ -31,14 +31,6 @@
   }
 }
 
-#tempted {
-  #tempted:hover{
-    filter: invert(100%) $drop-g !important;
-    cursor: pointer;
-    color: lightgreen;
-  }
-}
-
 .boards-container {
   max-width: 1200px;
   width: 100%;

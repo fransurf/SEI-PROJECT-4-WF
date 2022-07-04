@@ -107,6 +107,11 @@
                 }
               }
 
+              #terrain-links {
+                display: flex;
+                flex-direction: column;
+                
+              }
             }
 
           }
@@ -133,6 +138,7 @@
 
   #carousel-link {
     color: white !important;
+    padding: 0 !important;
   }
 
 }

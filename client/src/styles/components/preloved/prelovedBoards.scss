@@ -2,12 +2,11 @@
   // Girls with boards background image
   background-image: url('../../../assets/community.jpeg');
   background-size: cover;
-  background-attachment: fixed;
-
+  background-attachment: fixed !important;
   position: absolute;
+  top: 45px;
   height: 100%;
   width: 100%;
-  margin: 0 auto;
 
   .preloved-title {
     filter: $drop-w;
@@ -23,12 +22,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
+    // position: absolute;
+    // top: 45px;
+    // height: 100%;
+    // width: 100%;
   }
 
   .card {
+    // position: relative;
     height: 480px;
-    max-width: 380px;
+    width: 380px;
     margin: 20px;
     margin-bottom: 10px;
     border-radius: 4px;
