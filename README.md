@@ -2,13 +2,13 @@
 
 ## Table of contents
 
-1. [Project overview](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#sei-project-4-wf)
-2. [Brief](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
-3. [Technologies](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
-4. [Approach taken](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
-5. [Build diary](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
-6. [Displays](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
-7. [Key learning & Future improvements](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md##Brief)
+1. [Project overview](README.md#project-4---women-that-shred)
+2. [Brief](README.md#brief)
+3. [Technologies](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#technologies)
+4. [Approach taken](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#approach-taken)
+5. [Build diary](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#build-diary)
+6. [Displays](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#displays)
+7. [Key learning & Future improvements](https://github.com/fransurf/SEI-PROJECT-4-WF/blob/main/README.md#key-learning--future-improvements)
 
 # Project 4 - ‘Women that Shred’
 A website collating information on the latest women’s snowboards, advice on how to select a board, and an authenticated members-only area to buy and sell preloved boards. The site has a consistent, on-brand theme running throughout, including stylised colouring, fonts and displays, designed to suit the consumer. A focus on transitions and animations has been applied throughout to create a dynamic and engaging user experience. Django & REST-framework were employed to build-out an organised backend, querying an SQL database using postgreSQL.  SASS, React.js, React-bootstrap & React-Slick create appealing frontend displays.
