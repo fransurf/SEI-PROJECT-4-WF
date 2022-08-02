@@ -19,19 +19,19 @@ const NavBar = () => {
   return (
     <header>
       <nav id='navbar'>
-        <Link to="/boards/advice" className="logo link">Advice</Link>
-        <Link to="/selection" className="logo link">Boards</Link>
-        <Link to="/" className="logo link">WTS</Link>
-        <Link to="/preloved" className="logo link">Preloved</Link>
+        <Link to="/boards/advice" className="logo">Advice</Link>
+        <Link to="/selection" className="logo">Boards</Link>
+        <Link to="/" className="logo">WTS</Link>
+        <Link to="/preloved" className="logo">Preloved</Link>
 
         {/* SHOW 'LOGIN' WHEN LOGEED OUT & 'LOGOUT' WHEN LOGGED IN */}
         {userIsAuthenticated() ?
           <>
-            <Link onClick={handleLogout} to='' className="logo link" alt='Logout'>Logout</Link>
+            <Link onClick={handleLogout} to='' className="logo" alt='Logout'>Logout</Link>
           </>
           :
           <>
-            <Link to="/login" className="logo link" alt='Login'>Login</Link>
+            <Link to="/login" className="logo" alt='Login'>Login</Link>
           </>
 
         }

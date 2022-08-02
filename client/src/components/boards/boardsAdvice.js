@@ -38,7 +38,7 @@ const BoardsAdvice = () => {
             <div className='long-text long-text-box' >
               <p>Up until a few years ago, you could put a board down on the snow, look at it sideways and they would all look quite similar. Most board profiles had remained pretty much the same since the late eighties when <b>camber</b> was introduced. Prior to this, the early years of snowboarding were rife with experimentation and all kind of wacky designs.</p>
               <p>Its only in recent seasons that this experimental feel has been revived. In 2007, Lib Tech brought out the Skate Banana and K2 introduced the Gyrator. These reverse camber, or <b>rocker</b>, sticks marked the start of a board shape revolution.</p>
-              <a href='https://whitelines.com/snowboard-gear/before-you-buy/camber-rocker-snowboards-differences.html' target='blank'>Wait. What?</a>
+              <a href='https://whitelines.com/snowboard-gear/before-you-buy/camber-rocker-snowboards-differences.html' target='blank' className='link'>Wait. What?</a>
             </div>
           </div>
 
