@@ -47,6 +47,7 @@ const PrelovedBoards = () => {
 
   return (
     < Container className='terrain-page-container preloved-page-container' >
+      <div className='terrain-img' id='preloved-container-img'></div>
       {userIsAuthenticated() ?
         <>
           <h1 className='preloved-title'>Preloved boards wanting new owners</h1>
