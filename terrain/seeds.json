@@ -1,23 +1,37 @@
 [
 {
   "model": "terrain.terrain",
-  "pk": 1,
-  "fields": {
-    "type": "All"
-  }
-},
-{
-  "model": "terrain.terrain",
   "pk": 2,
   "fields": {
-    "type": "All mountain"
+    "type": "all-mountain"
   }
 },
 {
   "model": "terrain.terrain",
   "pk": 3,
   "fields": {
-    "type": "Powder"
+    "type": "powder"
+  }
+},
+{
+  "model": "terrain.terrain",
+  "pk": 4,
+  "fields": {
+    "type": "piste"
+  }
+},
+{
+  "model": "terrain.terrain",
+  "pk": 5,
+  "fields": {
+    "type": "park"
+  }
+},
+{
+  "model": "terrain.terrain",
+  "pk": 6,
+  "fields": {
+    "type": "beginner"
   }
 }
 ]

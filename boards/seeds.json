@@ -5,13 +5,13 @@
   "fields": {
     "make": "Nidecka",
     "model": "Venus",
-    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "board_img": "venus",
     "price": 350,
     "link": "https://www.nidecker.com/en/snowboards/20-1161-venus.html#/186-size-139n",
-    "description": "Best Women’s All-Mountain Snowboard",
+    "description": "A staple of Nidecker’s women’s line for many years, it’s been radically upgraded for 2021/22 with blunter lines and a slightly shorter tail. The result? Better turns, more float and increased stability when you’re blasting around the hill, while retaining all the freestyle performance you need to take it to the park.",
     "tech": "Details",
     "terrain": [
-      1
+      2
     ]
   }
 },
@@ -20,8 +20,8 @@
   "pk": 2,
   "fields": {
     "make": "K2",
-    "model": "Special Effect",
-    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "model": "Special Effects",
+    "board_img": "special-effects",
     "price": 520,
     "link": "https://k2snow.com/en-gb/p/special-effects-snowboard",
     "description": "Welcoming to the stage for their first ever appearance, K2 brings you the Special Effects snowboard. Built for boarders to want to adventure into the unknown and untouched snow, this board lets glide over snow, bounce down pillows and makes predictable turn imitations.",
@@ -37,13 +37,13 @@
   "fields": {
     "make": "Rome",
     "model": "Muse",
-    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "board_img": "muse",
     "price": 400,
     "link": "https://romesnowboards.com/products/rome-muse-snowboard-2021-2022?_pos=1&_sid=96eb8e1a3&_ss=r&variant=39536593698947?utm_source=media&utm_medium=whitelines&utm_campaign=buyers_guide",
     "description": "This fresh model from Rome is essentially a bit like a speedboat. It’s fast, agile, exciting, bags of fun, and guaranteed to make onlookers green with envy. In fact, one could argue that it’s even better; with the Rome Muse, you won’t feel like a prime, Insta-influencer-grade bellend when you’re on",
-    "tech": "details",
+    "tech": "EDITING SOMETHING",
     "terrain": [
-      3
+      2
     ]
   }
 },
@@ -53,13 +53,277 @@
   "fields": {
     "make": "Salomon",
     "model": "Bellevue",
-    "board_img": "https://whitelines.com/snowboard-gear/reviews/best-buys/best-womens-snowboards.html#3",
+    "board_img": "bellevue",
     "price": 430,
     "link": "https://www.salomon.com/en-gb/shop-emea/product/bellevue-lg8287.html#color=60699",
     "description": "It’s a midweek morning, you’re off work and you’ve woken up to reports of 40+inches of fresh powder overnight. In your mind’s eye you're chucking the biggest, longest turns spraying snow as far as humanly possible on the steepest deepest faces at full speed. You’re probably going to want a board that makes that feel easy too aren’t you?",
     "tech": "details",
     "terrain": [
-      1
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 7,
+  "fields": {
+    "make": "YES.",
+    "model": "Rival",
+    "board_img": "rival",
+    "price": 449,
+    "link": "https://www.yesnowboard.com/snowboards/322-92-rival.html#/3-size-152",
+    "description": "YES. are self-confessed purveyors of rebellious youth, and the all-new Rival sits perfectly with these values. A no-holds-barred, take-no-prisoners freestyle weapon designed for ladies with a penchant for ripping, it’s going to tick boxes you didn’t even know you had and is a full-on shake-up for women’s park riding.",
+    "tech": "XXXX",
+    "terrain": [
+      5
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 8,
+  "fields": {
+    "make": "Capita",
+    "model": "Space Metal Fantasy",
+    "board_img": "space-metal-fantasy",
+    "price": 280,
+    "link": "https://www.absolute-snow.co.uk/V/Capita_Space_Metal_Fantasy_Womens_Snowboard_145cm_2022-(307944)",
+    "description": "If hitting rails and boxes – or any other jib for that matter – is your thing, then the Space Metal Fantasy should be at or near the top of your list. It’s also, as a freestyle snowboard should be, great at riding in either direction and whilst not the top jumper in this list, is still good for jumps, especially small to medium jumps.",
+    "tech": "xxx",
+    "terrain": [
+      5
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 9,
+  "fields": {
+    "make": "Gnu",
+    "model": "Pro Choice",
+    "board_img": "pro-choice",
+    "price": 300,
+    "link": "https://www.absolute-snow.co.uk/V/GNU_Ladies_Choice_Womens_Hybrid_Camber_Snowboard_1515cm_2020-(222836)?gclid=cjwkcajw46cvbhb1eiwagy6m4nuk-jaetpkp8apfa_vvcshs1pbr8hiegkymhgifeadz-tfyqlzjmrocbtoqavd_bw",
+    "description": "The board features Mervin’s C3 camber profile – which is their most aggressive – and has a shorter, mellower rocker between the bindings, then more dynamic camber under each binding for increased power and drive. The fact that it’s only very slightly rockered in the middle compared to its sister, the GNU Ladies Choice, gives it more explosive pop and a more stable feel on the in-run.",
+    "tech": "xxx",
+    "terrain": [
+      5
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 10,
+  "fields": {
+    "make": "Bataleon",
+    "model": "Distortia",
+    "board_img": "bataleon-distortia",
+    "price": 385,
+    "link": "https://www.blue-tomato.com/en-GB/product/Bataleon-Distortia+140+2022+Snowboard-654812/",
+    "description": "When you’re looking to improve your freestyle skills, there’s not many more confidence inspiring sights than 3BT. The uplifted edges allow you to be much sketchier when you land without chucking you on your arse, and the fact that you don’t have to stomp every single trick is going to have you making super natural and fast progression..",
+    "tech": "xxx",
+    "terrain": [
+      5
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 11,
+  "fields": {
+    "make": "Lib Tech",
+    "model": "No.43",
+    "board_img": "no43",
+    "price": 490,
+    "link": "https://www.lib-tech.com/no-43",
+    "description": "The individual cambers under each foot will give you enough pop and grip needed to set up for spinning the kicker line or carving in the pipe. The combination of tri and biax fibreglass layers result in a board with all the response and support you need for charging, with enough ‘press-ability’ and forgiveness to still have fun when you want to take your foot off the gas.",
+    "tech": "xxx",
+    "terrain": [
+      5
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 12,
+  "fields": {
+    "make": "Capita",
+    "model": "The Equalizer",
+    "board_img": "equalizer",
+    "price": 325,
+    "link": "https://www.theboardbasement.com/womens-capita-alpine-assult-force-hybrid-snowboard?c=The%20Equalizer&gclid=CjwKCAjw46CVBhB1EiwAgy6M4lnfQYdyqUs9PT0Db_N17YJKEN9S-WT-VLdOR0UNBFcNpGLCu8B0NRoCeM0QAvD_BwE",
+    "description": "The directional shape of the Equalizer see’s the tail become blunted, whilst the rockered nose extends on. The increased surface area, and setback nature of the board keep it sailing through the deeper snow easily.",
+    "tech": "xxx",
+    "terrain": [
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 13,
+  "fields": {
+    "make": "Nidecka",
+    "model": "Odyssey",
+    "board_img": "odyssey",
+    "price": 375,
+    "link": "https://www.nidecker.com/en/snowboards/21-odyssey.html",
+    "description": "The setback camber and rocker in nose makes for the ultimate surfy feel. You get the power through your back legs for pumping turns, and the float from the rockered tip keeps you sailing through powder. The wide diamond shape in the nose adds further float to the board, while the short fishtail makes it easier to make tight turns in between trees.",
+    "tech": "xxx",
+    "terrain": [
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 14,
+  "fields": {
+    "make": "Bataleon",
+    "model": "Love Powder",
+    "board_img": "love-powder",
+    "price": 429,
+    "link": "https://eu.bataleon.com/products/bataleon-love-powder-snowboard-2021-2022?",
+    "description": "The directional shape and volume of the Love Powder keeps your weight over the back of the board, and the crescent shape tail reduces the surface area helping to angle the boards tip up out of the snow. This, plus the POW 3BT uplifts in the nose make a board that can effortlessly float in any and all conditions.",
+    "tech": "xxx",
+    "terrain": [
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 15,
+  "fields": {
+    "make": "Jones",
+    "model": "Mind Expander",
+    "board_img": "mind-expander",
+    "price": 529,
+    "link": "https://whitelines.com/snowboard-gear/reviews/snowboards/jones-womens-mind-expander-2021-2022.html",
+    "description": "The Mind Expander is built around a surf rocker profile, as the tail is weighted the nose lifts offering crazy amounts of float. Add this to the 3D contoured base and super directional shape and you’ve got the recipe for a powder board that’ll blow your mind.",
+    "tech": "xxx",
+    "terrain": [
+      3
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 16,
+  "fields": {
+    "make": "Arbor",
+    "model": "Poparazzi Rocker",
+    "board_img": "poparazzi-rocker",
+    "price": 390,
+    "link": "https://www.arborcollective.com/products/poparazzi-rocker-22",
+    "description": "If you're looking for an easy riding board that's freestyle oriented, but has enough performance that it can take you further into your progression than a pure beginner board, the Poparazzi Rocker is a really good option. \r\n\r\nParticularly good for those on a tight budget, being the lowest priced option on this list.",
+    "tech": "xxx",
+    "terrain": [
+      6
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 17,
+  "fields": {
+    "make": "Lib Tech",
+    "model": "Glider",
+    "board_img": "glider",
+    "price": 333,
+    "link": "https://www.lib-tech.com/glider",
+    "description": "The Glider is a great board for those who are just past that very beginner stage and looking to progress. An even better option for those looking to get into riding freestyle in the future or who are already getting started in that direction. Or simply see themselves as a more casual, playful rider.",
+    "tech": "xxx",
+    "terrain": [
+      6,
+      4
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 18,
+  "fields": {
+    "make": "YES.",
+    "model": "Emoticon",
+    "board_img": "emoticon",
+    "price": 360,
+    "link": "https://www.yesnowboard.com/snowboards/319-emoticon.html",
+    "description": "The Emoticon is one of those boards that anyone from beginner to expert can ride. For the more advanced rider it takes on more of a freestyle focus. But as a beginner to intermediate rider is also a great board for progressing your everyday riding on. \r\n\r\nAlso a great option for those that see hard/icy conditions often.",
+    "tech": "xxx",
+    "terrain": [
+      6,
+      4
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 19,
+  "fields": {
+    "make": "Capita",
+    "model": "Paradise",
+    "board_img": "paradise",
+    "price": 280,
+    "link": "https://capitasnowboarding.com/products/paradise",
+    "description": "Probably the most versatile twin going around, if you like to ride over the whole mountain and would like the option to get freestyle on it, from time to time, then the Paradise is a great option. \r\n\r\nOr if you simply like to cruise the groomers and just want to get your riding smoother and progress to a more advanced level, then it's also a great option for that.",
+    "tech": "xxx",
+    "terrain": [
+      6,
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 20,
+  "fields": {
+    "make": "Burton",
+    "model": "Stylus",
+    "board_img": "stylus",
+    "price": 320,
+    "link": "https://www.burton.com/gb/en/p/womens-burton-stylus-flattop-snowboard/W22-106971.html",
+    "description": "The Burton Stylus is a super easy ride - one of those boards that will accelerate your progression – so if you’re looking to improve as quickly as possible and are happy with having to upgrade once you’ve upped your skill level and/or found your preferred style, then this is going to be a great choice.\r\n\r\nAlso great for anyone foreseeing a future riding freestyle/park. Or wants a fun, playful board for messing around with or beating up in the park in the future.",
+    "tech": "xxx",
+    "terrain": [
+      2,
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 21,
+  "fields": {
+    "make": "Bataleon",
+    "model": "Spirit",
+    "board_img": "spirit",
+    "price": 260,
+    "link": "https://www.evo.com/snowboards/bataleon-spirit-snowboard-womens",
+    "description": "You already know snowboarding is your new thing - now it's time to master the art. The Bataleon Spirit Snowboard is built to help you progress and keep the stoke flowing as your skills grow. As the softest, friendliest board in the Bataleon lineup, this deck is a blast to ride and easy to get the hang of. If you've caught the bug, the Spirit is ready and waiting for you.",
+    "tech": "xxx",
+    "terrain": [
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "boards.board",
+  "pk": 22,
+  "fields": {
+    "make": "Burton",
+    "model": "Feelgood",
+    "board_img": "feelgood",
+    "price": 460,
+    "link": "https://www.burton.com/gb/en/p/womens-burton-feelgood-camber-snowboard/W22-106911.html",
+    "description": "The feeling you get when you strap your boots into a Burton Feelgood women’s snowboard is not like any other feeling you can get. Let’s take in just how good it feels to ride a women’s snowboard you can actually feel confident in and one you can trust. Feel the effortless ride and intuition of the Burton Feelgood snowboard under your feet and understand what freedom is.",
+    "tech": "xxx",
+    "terrain": [
+      2,
+      4
     ]
   }
 }

@@ -1,1 +1,67 @@
 [
+{
+  "model": "pre_loved.pre_loved",
+  "pk": 3,
+  "fields": {
+    "make": "Salomon",
+    "model": "Gypsy",
+    "board_img": "gypsy",
+    "price": 180,
+    "description": "Great graphics. Great bounce. 5years old. Mint condition",
+    "created_at": "2022-06-10T12:04:38.086Z",
+    "owner": 4
+  }
+},
+{
+  "model": "pre_loved.pre_loved",
+  "pk": 4,
+  "fields": {
+    "make": "K2",
+    "model": "Nikita",
+    "board_img": "Nikita",
+    "price": 80,
+    "description": "Perfect board for beginners and those that want to advance onto the powder. Stiff. Much loved. Really quite old but in good condition",
+    "created_at": "2022-06-17T08:37:43.660Z",
+    "owner": 8
+  }
+},
+{
+  "model": "pre_loved.pre_loved",
+  "pk": 5,
+  "fields": {
+    "make": "K2",
+    "model": "Ecopop",
+    "board_img": "ecopop",
+    "price": 100000,
+    "description": "Bouncy and fun. Impossible to catch an edge. Nice switch rider. But you better keep searching... I would obviously NEVER sell this board",
+    "created_at": "2022-06-17T09:11:32.347Z",
+    "owner": 2
+  }
+},
+{
+  "model": "pre_loved.pre_loved",
+  "pk": 6,
+  "fields": {
+    "make": "Capita",
+    "model": "Space cats",
+    "board_img": "space-cats",
+    "price": 90,
+    "description": "Very nice board - take me to the mountains!!",
+    "created_at": "2022-06-17T11:42:51.022Z",
+    "owner": 1
+  }
+},
+{
+  "model": "pre_loved.pre_loved",
+  "pk": 7,
+  "fields": {
+    "make": "YES.",
+    "model": "Hel Yes",
+    "board_img": "hel-yes",
+    "price": 120,
+    "description": "Awesomeness",
+    "created_at": "2022-06-17T13:57:04.672Z",
+    "owner": 1
+  }
+}
+]
