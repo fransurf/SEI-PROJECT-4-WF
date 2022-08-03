@@ -21,8 +21,8 @@ const BoardsCarousel = () => {
     const getBoards = async () => {
       try {
         const { data } = await axios.get('/api/boards/')
-        console.log('🏆 Got the boards data!', data)
-        console.log('🏆 Got the terrain data??', data.terrain)
+        // console.log('🏆 Got the boards data!', data)
+        // console.log('🏆 Got the terrain data??', data.terrain)
 
         setBoards(data)
 

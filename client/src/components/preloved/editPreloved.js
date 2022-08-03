@@ -34,7 +34,7 @@ const EditPreloved = () => {
   useEffect(() => {
     const getPreloved = async () => {
       try {
-        const { data } = await axios.get(`/api/preloved/${id}`)
+        const { data } = await axios.get(`/api/preloved/${id}/`)
         setPreloved(data)
         setFormData(data)
       } catch (error) {

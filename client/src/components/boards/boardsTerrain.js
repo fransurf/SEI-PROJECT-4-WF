@@ -18,7 +18,7 @@ const BoardsTerrain = () => {
   useEffect(() => {
     const getTerrain = async () => {
       try {
-        const { data } = await axios.get(`/api/terrain/${type}`)
+        const { data } = await axios.get(`/api/terrain/${type}/`)
         console.log('Got the terrain data -> 👊🏼', data)
         console.log('Got the terrain data.boards -> 👊🏼', data.boards)
 
