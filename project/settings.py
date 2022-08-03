@@ -3,6 +3,12 @@ import django_on_heroku
 
 import os
 
+# SECURING ENVIRONMENT VARIABLES
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
 """
 Django settings for project project.
 
@@ -26,7 +32,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m%zb((5@l-5chpps)p))v+@&+%@itn3qoxn9-+@2(3+b4^=4$*'
+# SECRET_KEY = 'django-insecure-m%zb((5@l-5chpps)p))v+@&+%@itn3qoxn9-+@2(3+b4^=4$*'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

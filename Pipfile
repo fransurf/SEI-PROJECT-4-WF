@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 autopep8 = "*"
 pyjwt = "*"
 django-on-heroku = "*"
+django-environ = "*"
 
 [dev-packages]
 
