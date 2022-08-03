@@ -14,13 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include 
+from django.urls import path, include, re_path  
 # ^ include() allows us to redirect any endpoint through another file
+from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/boards/', include('boards.urls')),
     path('api/terrain/', include('terrain.urls')),
     path('api/preloved/', include('pre_loved.urls')),
-    path('api/auth/', include('jwt_auth.urls'))
+    path('api/auth/', include('jwt_auth.urls')),
+    re_path(r'^.*$', index) 
 ]
