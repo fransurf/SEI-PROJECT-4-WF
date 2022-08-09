@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://women-that-shred.herokuapp.com/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
