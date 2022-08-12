@@ -63,12 +63,4 @@ const LandingPageSelection = () => {
   )
 }
 
-// Attempt at ternary inside return
-{/* { type } === 'piste' ? <h2 className='selector-text'>Piste bashers {'   >>>'}</h2>
-: {type} === 'park' ? <h2 className='selector-text'>Park {'   >>>'}</h2>
-: {type} === 'powder' ? <h2 className='selector-text'>Powder days {'   >>>'}</h2>
-: {type} === 'beginner' ? <h2 className='selector-text'>Its not all about the pros {'   >>>'}</h2>
-: <h2 className='selector-text'>Park {'   >>>'}</h2> ; 
-*/}
-
 export default LandingPageSelection
