@@ -21,7 +21,7 @@ const LandingPage = () => {
         </div>
       </div>
       <Link to='/selection' id='selection-link'>
-        <img className='arrows-down' src={Arrows} />
+        <img className='arrows-down' src={Arrows} alt='arrows navigating to next page'/>
       </Link>
       <img className='landing-img' src={HomeImage} alt='female boarder photo' />
     </Container>
