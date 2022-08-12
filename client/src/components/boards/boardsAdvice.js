@@ -2,8 +2,8 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 
 // Import image files
-// import FlexImage from '../../assets/general/boardFlex.jpeg'
-import ImgTest from '../../assets/general/bwSketch.jpeg'
+// import FlexImage from '/../../assets/general/boardFlex.jpeg'
+import ImgTest from '/../../assets/general/bwSketch.jpeg'
 
 const BoardsAdvice = () => {
 
