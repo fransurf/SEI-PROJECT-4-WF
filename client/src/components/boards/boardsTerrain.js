@@ -68,7 +68,7 @@ const BoardsTerrain = () => {
                     <a href={link} className='link' id='tempted' target='blank'>TEMPTED??</a>
                   </div>
                   {/* eslint-disable-next-line camelcase */}
-                  <img className={`board-img board-img-${LR[i]}`} src={`../../assets/boards/${board_img}.jpeg`} alt={`image of ${make} - ${model}`} />
+                  <img className={`board-img board-img-${LR[i]}`} src={require(`../../assets/boards/${board_img}.jpeg`)} alt={`image of ${make} - ${model}`} />
                 </div>
               </section>
             </>
