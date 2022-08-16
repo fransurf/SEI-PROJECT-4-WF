@@ -74,5 +74,24 @@
     "groups": [],
     "user_permissions": []
   }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$OVv0qitUDUioDSvmI1j79d$3dh/rjnSvUhBpJMCR78oM+MntHlMfptIqfQg+K3ltXA=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-06-10T09:50:41.879Z",
+    "username": "fran8",
+    "email": "fran8@email.com",
+    "profile_pic": "URL",
+    "groups": [],
+    "user_permissions": []
+  }
 }
 ]

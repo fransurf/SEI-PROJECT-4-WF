@@ -14,19 +14,6 @@
 },
 {
   "model": "pre_loved.pre_loved",
-  "pk": 4,
-  "fields": {
-    "make": "K2",
-    "model": "Nikita",
-    "board_img": "Nikita",
-    "price": 80,
-    "description": "Perfect board for beginners and those that want to advance onto the powder. Stiff. Much loved. Really quite old but in good condition",
-    "created_at": "2022-06-17T08:37:43.660Z",
-    "owner": 8
-  }
-},
-{
-  "model": "pre_loved.pre_loved",
   "pk": 5,
   "fields": {
     "make": "K2",
