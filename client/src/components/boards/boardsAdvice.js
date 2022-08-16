@@ -2,8 +2,8 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 
 // Import image files
-// import FlexImage from '/../../assets/general/boardFlex.jpeg'
-import ImgTest from '/../../assets/general/bwSketch.jpeg'
+import FlexImage from '../../assets/general/boardFlex.jpeg'
+// import ImgTest from '/../../assets/general/bwSketch.jpeg'
 
 const BoardsAdvice = () => {
 
@@ -12,7 +12,7 @@ const BoardsAdvice = () => {
       <h1>PICKING YOUR PERFECT BOARD</h1>
       <h2>Its more than just colour schemes</h2>
       <section id='advice'>
-        <img id='advice-img' src={ImgTest} alt='girl on flex board photo' />
+        <img id='advice-img' src={FlexImage} alt='girl on flex board photo' />
         <div id='advice-divs'>
           <div className='board-selector advice-animate expand' id='flex'>
             <h2 className='selector-text short-text'>{'<<< Flex >>>'} </h2>

@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import { Link } from 'react-router-dom'
 
+import HomeImage from '../../assets/general/bwPhoto.jpeg'
+
 
 const LandingPageSelection = () => {
 
@@ -57,7 +59,7 @@ const LandingPageSelection = () => {
         })}
 
       </section>
-      <img className='landing-img' src='../../assets/general/bwPhoto.jpeg' alt='female boarder photo' />
+      <img className='landing-img' src={HomeImage} alt='female boarder photo' />
     </Container>
 
   )
