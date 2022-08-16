@@ -62,7 +62,7 @@ const PrelovedBoards = () => {
                 <Col key={id} md='6' lg='4'  >
                   <Card>
                     {/* eslint-disable-next-line camelcase */}
-                    <Card.Img className='preloved-img' variant='left' src={`../../../assets/preloved/${board_img}.jpeg`} />
+                    {/* <Card.Img className='preloved-img' variant='left' src={require(`../../assets/preloved/${board_img}.jpeg`)} /> */}
                     <Card.Body className='card-body'>
                       <Card.Title className='title mb-0' >{make} - {model}</Card.Title>
                       <Card.Title className='title mb-0' >{`£${price}`}</Card.Title>

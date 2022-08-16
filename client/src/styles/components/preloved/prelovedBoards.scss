@@ -1,7 +1,15 @@
 .preloved-page-container {
   // Girls with boards background image
+  top: 45px;
+  left: 0;  
+
   #preloved-container-img {
     background-image: url('../../../assets/community.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: -10;
   }
 

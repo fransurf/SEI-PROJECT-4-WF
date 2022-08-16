@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
 
-
 const BoardsTerrain = () => {
 
 
