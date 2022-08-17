@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 // Import components
 
@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <main className='main-container'>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <Routes>
           {/* Landing Page */}
@@ -30,7 +30,7 @@ const App = () => {
           {/* BOARDS PAGES */}
           <Route path="/boards/" element={<BoardsCarousel />} />
           <Route path="/boards/:type" element={<BoardsTerrain />} />
-          <Route path="/boards/advice" element={<BoardsAdvice />} />
+          <Route path="/advice" element={<BoardsAdvice />} />
 
           {/* AUTHENTICATION PAGES */}
           <Route path="/register" element={<Register />} />
@@ -44,7 +44,7 @@ const App = () => {
 
 
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </main>
   )
