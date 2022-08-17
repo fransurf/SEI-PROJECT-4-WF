@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/selection" element={<LandingPageSelection />} />
 
           {/* BOARDS PAGES */}
-          <Route path="/boards" element={<BoardsCarousel />} />
+          <Route path="/boards/" element={<BoardsCarousel />} />
           <Route path="/boards/:type" element={<BoardsTerrain />} />
           <Route path="/boards/advice" element={<BoardsAdvice />} />
 
@@ -38,7 +38,7 @@ const App = () => {
           {/* Login */}
 
           {/* PRELOVED BOARDS PAGES */}
-          <Route path="/preloved" element={<PrelovedBoards />} />
+          <Route path="/preloved/" element={<PrelovedBoards />} />
           <Route path="/preloved/add" element={<AddPreloved />} />
           <Route path="/preloved/ed" element={<EditPreloved />} />
 
