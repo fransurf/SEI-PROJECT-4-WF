@@ -89,7 +89,7 @@ const BoardsCarousel = () => {
             <div key={id} className='card'>
               <div className='card-img'>
                 {/* eslint-disable-next-line camelcase */}
-                <img className='board-img' src={`../../assets/boards/${board_img}.jpeg`} />
+                <img className='board-img' src={require(`../../assets/boards/${board_img}.jpeg`)} />
               </div>
               <div className='right' >
                 <div></div>

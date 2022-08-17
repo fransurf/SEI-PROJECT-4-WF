@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.03ddb4d4.css",
-    "main.js": "./static/js/main.93d02593.js",
+    "main.css": "./static/css/main.b92b37ed.css",
+    "main.js": "./static/js/main.4f086934.js",
     "static/media/piste-map.png": "./static/media/piste-map.720c39f1f4cdae25a5b7.png",
     "static/media/all.png": "./static/media/all.b6d9e6ac166780e1f2ac.png",
     "static/media/powder.png": "./static/media/powder.77b61536a8ac285be04e.png",
@@ -27,10 +27,10 @@
     "static/media/park.png": "./static/media/park.fe015ffe1bfb2380c70a.png",
     "static/media/mind-expander.jpeg": "./static/media/mind-expander.bf52190bbc6db4f320f8.jpeg",
     "static/media/powder-landscape2.jpeg": "./static/media/powder-landscape2.22e200f4ea61672f6211.jpeg",
-    "static/media/bwSketch.jpeg": "./static/media/bwSketch.efd5be15a99e6e7ea823.jpeg",
     "static/media/muse.jpeg": "./static/media/muse.994d28fc06865dcd06f3.jpeg",
     "static/media/feelgood.jpeg": "./static/media/feelgood.85b751d8cb61a037e9cf.jpeg",
     "static/media/beginner-landscape.jpeg": "./static/media/beginner-landscape.19328eed596f304513aa.jpeg",
+    "static/media/boardFlex.jpeg": "./static/media/boardFlex.8336d4d63ab514b372ad.jpeg",
     "static/media/emoticon.jpeg": "./static/media/emoticon.0559d7936626e4ccae4e.jpeg",
     "static/media/stylus.jpeg": "./static/media/stylus.d710cdbcbdec38288d62.jpeg",
     "static/media/space-metal-fantasy.jpeg": "./static/media/space-metal-fantasy.ea96a1f626d52c07b63c.jpeg",
@@ -45,11 +45,11 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.03ddb4d4.css.map": "./static/css/main.03ddb4d4.css.map",
-    "main.93d02593.js.map": "./static/js/main.93d02593.js.map"
+    "main.b92b37ed.css.map": "./static/css/main.b92b37ed.css.map",
+    "main.4f086934.js.map": "./static/js/main.4f086934.js.map"
   },
   "entrypoints": [
-    "static/css/main.03ddb4d4.css",
-    "static/js/main.93d02593.js"
+    "static/css/main.b92b37ed.css",
+    "static/js/main.4f086934.js"
   ]
 }
