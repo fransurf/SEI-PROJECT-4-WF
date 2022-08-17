@@ -2,14 +2,16 @@
   // Girls with boards background image
   top: 45px;
   left: 0;  
+  height: 100%;
+  width: 100%;
 
   #preloved-container-img {
     background-image: url('../../../assets/community.jpeg');
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
     z-index: -10;
   }
 
