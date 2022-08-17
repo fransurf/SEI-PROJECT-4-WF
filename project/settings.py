@@ -14,8 +14,14 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 # For deployment using heroku
 import django_on_heroku
-import os
+
 from pathlib import Path
+import os
+
+# SECURITY WARNING: keep the secret key used in production secret!
+import environ
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,11 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-m%zb((5@l-5chpps)p))v+@&+%@itn3qoxn9-+@2(3+b4^=4$*'
-import environ
-env = environ.Env()
-environ.Env.read_env()
+
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -49,7 +51,7 @@ INSTALLED_APPS = [
     'jwt_auth',
     'boards',
     'terrain',
-    'pre_loved'
+    'pre_loved',
 ]
 
 MIDDLEWARE = [
@@ -149,7 +151,7 @@ REST_FRAMEWORK = {
 
 ROOT_URLCONF = 'project.urls'
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'client', "build", "static"),
