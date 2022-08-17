@@ -15,8 +15,7 @@ A website collating information on the latest women’s snowboards, advice on ho
 
 ![Mapping terrain links code snippet](/readMe4_imgs/p4-img1.png)
 
-## View ’Women that Shred’?
-xxxx
+## [View ’Women that Shred’?](https://women-that-shred.herokuapp.com/)
 
 ## Brief
 One week solo-project to build a full-stack website; using a Python Django API & Django REST-framework to serve your data from a Postgres database; consuming the API with a separate front-end built with React; multiple relationships and CRUD functionality for at least a couple of models; visually impressive design; deployed online so that it's publicly accessible.
