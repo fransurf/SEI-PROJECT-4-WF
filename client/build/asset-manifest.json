@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.21dd41a2.css",
-    "main.js": "./static/js/main.5cf2b9b8.js",
+    "main.css": "./static/css/main.9be10151.css",
+    "main.js": "./static/js/main.dbaca042.js",
     "static/media/piste-map.png": "./static/media/piste-map.720c39f1f4cdae25a5b7.png",
     "static/media/all.png": "./static/media/all.b6d9e6ac166780e1f2ac.png",
     "static/media/powder.png": "./static/media/powder.77b61536a8ac285be04e.png",
@@ -11,10 +11,8 @@
     "static/media/no43.jpeg": "./static/media/no43.038bcbe578abf22b47ec.jpeg",
     "static/media/glider.jpeg": "./static/media/glider.03e631e31ed5fbed72f1.jpeg",
     "static/media/pro-choice.jpeg": "./static/media/pro-choice.45f6401509d0ac0f4c9c.jpeg",
-    "static/media/gypsy.jpeg": "./static/media/gypsy.ebaf8550a221ca3d0a87.jpeg",
     "static/media/all-mountain.png": "./static/media/all-mountain.20fb342f494a2d6bc25c.png",
     "static/media/beginner.png": "./static/media/beginner.01fc1f8e91122379e33f.png",
-    "static/media/space-cats.jpeg": "./static/media/space-cats.7230693097e962642d79.jpeg",
     "static/media/park-landscape.jpeg": "./static/media/park-landscape.0549618fa620483bd934.jpeg",
     "static/media/bataleon-distortia.jpeg": "./static/media/bataleon-distortia.9bd7dc7bca716f2dc957.jpeg",
     "static/media/community.jpeg": "./static/media/community.0a62fd6d70f70945cfbb.jpeg",
@@ -36,10 +34,7 @@
     "static/media/emoticon.jpeg": "./static/media/emoticon.0559d7936626e4ccae4e.jpeg",
     "static/media/stylus.jpeg": "./static/media/stylus.d710cdbcbdec38288d62.jpeg",
     "static/media/space-metal-fantasy.jpeg": "./static/media/space-metal-fantasy.ea96a1f626d52c07b63c.jpeg",
-    "static/media/Nikita.jpeg": "./static/media/Nikita.6435c1a13d68346bf419.jpeg",
-    "static/media/hel-yes.jpeg": "./static/media/hel-yes.3264769fd027d926a07e.jpeg",
     "static/media/love-powder.jpeg": "./static/media/love-powder.ab07d0ba245a92a636d2.jpeg",
-    "static/media/ecopop.jpeg": "./static/media/ecopop.13e3d5386531ca482dc9.jpeg",
     "static/media/arrow-pinkRight.png": "./static/media/arrow-pinkRight.90d09561cc58bb75ef95.png",
     "static/media/arrow-pinkLeft.png": "./static/media/arrow-pinkLeft.304ce7785b6dd00853f7.png",
     "static/media/arrows-down1.png": "./static/media/arrows-down1.37114bc3caa0c3d18bec.png",
@@ -50,11 +45,11 @@
     "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
-    "main.21dd41a2.css.map": "./static/css/main.21dd41a2.css.map",
-    "main.5cf2b9b8.js.map": "./static/js/main.5cf2b9b8.js.map"
+    "main.9be10151.css.map": "./static/css/main.9be10151.css.map",
+    "main.dbaca042.js.map": "./static/js/main.dbaca042.js.map"
   },
   "entrypoints": [
-    "static/css/main.21dd41a2.css",
-    "static/js/main.5cf2b9b8.js"
+    "static/css/main.9be10151.css",
+    "static/js/main.dbaca042.js"
   ]
 }
