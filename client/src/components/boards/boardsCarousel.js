@@ -104,7 +104,8 @@ const BoardsCarousel = () => {
                   <div id='terrain-links'>
                     {terrainType.map((type) => {
                       return (
-                        <a href={`/boards/${type}`} key={type} className='link carousel-link'>{type}</a>
+                        <Link to={`/boards/${type}`} key={type} className='link carousel-link'>{type}</Link>
+                        // <a href={`/boards/${type}`} key={type} className='link carousel-link'>{type}</a>
                       )
                     })}
                   </div>

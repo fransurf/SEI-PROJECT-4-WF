@@ -40,7 +40,7 @@ const App = () => {
           {/* PRELOVED BOARDS PAGES */}
           <Route path="/preloved/" element={<PrelovedBoards />} />
           <Route path="/preloved/add" element={<AddPreloved />} />
-          <Route path="/preloved/ed" element={<EditPreloved />} />
+          <Route path="/preloved/edit" element={<EditPreloved />} />
 
 
         </Routes>
