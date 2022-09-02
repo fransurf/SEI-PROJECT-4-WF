@@ -49,7 +49,7 @@ const EditPreloved = () => {
   useEffect(() => {
 
     if (preloved) {
-      !userIsOwner(preloved) && navigate('/api/preloved/')
+      !userIsOwner(preloved) && navigate('/preloved/')
     }
   }, [preloved, navigate])
 
