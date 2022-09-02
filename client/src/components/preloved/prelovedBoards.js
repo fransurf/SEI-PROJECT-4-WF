@@ -47,7 +47,7 @@ const PrelovedBoards = () => {
 
   return (
     < Container className='terrain-page-container preloved-page-container' >
-      <div className='terrain-img' id='preloved-container-img'></div>
+
       {userIsAuthenticated() ?
         <>
           <h1 className='preloved-title'>Preloved boards wanting new owners</h1>
@@ -62,7 +62,7 @@ const PrelovedBoards = () => {
                 <Col key={id} md='6' lg='4'  >
                   <Card>
                     {/* eslint-disable-next-line camelcase */}
-                    <Card.Img className='preloved-img' variant='left' src={require(`../../assets/preloved/${board_img}.jpeg`)} />
+                    {/* <Card.Img className='preloved-img' variant='left' src={require(`../../assets/preloved/${board_img}.jpeg`)} /> */}
                     <Card.Body className='card-body'>
                       <Card.Title className='title mb-0' >{make} - {model}</Card.Title>
                       <Card.Title className='title mb-0' >{`£${price}`}</Card.Title>
