@@ -3,6 +3,7 @@
   top: 45px;
   left: 0;  
   width: 100%;
+  // height: 100%;
 
   // Girls with boards background image
   position: absolute;
@@ -79,6 +80,20 @@
         color: black;
       }
     }
+  }
+
+  #no-access-bg {
+  position: absolute;
+  background-image: url('../../../assets/community.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -10;
+
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  margin: 0;
   }
 
 }

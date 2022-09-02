@@ -77,10 +77,12 @@ const PrelovedBoards = () => {
           </Row>
         </>
 
-
         :
         <>
-          <Link to="/login" id='no-access' alt='Login'>🚨 Only members can access the preloved boards pages 🚨</Link>
+          {/* MEMBERS ACCESS ONLY SCREEN */}
+          <div id='no-access-bg'>
+            <Link to="/login" id='no-access' alt='Login'>🚨 Only members can access the preloved boards pages 🚨</Link>
+          </div>
         </>
 
       }

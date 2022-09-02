@@ -70,7 +70,7 @@ const BoardsCarousel = () => {
 
   return (
     <Container id='boards-page-container'>
-      <div className='bg'></div>
+      {/* <div className='bg'></div> */}
       <h1>GIVE ME THEM ALL!!!</h1>
       {/* Link to advice page */}
       <Link to='/advice' className='link'>Need some advice?</Link>
